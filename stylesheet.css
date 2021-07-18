@@ -41,6 +41,8 @@ body {
     font-family: var(--ff-accent2);
     text-transform: uppercase;
     padding: .5em;
+    font-weight: 700;
+    letter-spacing: .2rem;
 }
 
 .navbar__child:hover {
@@ -65,4 +67,13 @@ img {
 
 p, h1 {
     text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: .75rem;
 }
