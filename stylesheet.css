@@ -52,8 +52,8 @@ body {
 
 .hamburger {
     position: absolute;
-    top: .75em;
-    right: -11.5em;
+    /*top: .75em;
+    right: -11.5em;*/
 }
 
 .hamburger span {
