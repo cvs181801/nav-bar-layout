@@ -67,9 +67,14 @@ body {
     transition: 0.3s;
 }
 
+.first__bar,
+.third__bar {
+    position: absolute;
+}
+
 .change.first__bar {
     transform: rotate(45deg);
-    top: 3em;
+    top: 30px;
 }
 
 .change.second__bar {
