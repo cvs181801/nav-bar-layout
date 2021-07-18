@@ -70,7 +70,7 @@ body {
 .first__bar,
 .third__bar {
     position: absolute;
-    top: .5em;
+    margin-top: 1em;
 }
 
 .change.first__bar {
