@@ -74,7 +74,7 @@ body {
 
 .change.first__bar {
     transform: rotate(45deg);
-    top: 300px;
+    top: 5em;
 }
 
 .change.second__bar {
