@@ -18,12 +18,13 @@ body {
 
 }
 
-
 .main__div {
     margin: 0 auto;
     max-width: 450px;
 }
 
 img {
-    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    max-height: 850px;
 }
