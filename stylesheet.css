@@ -25,7 +25,7 @@ body {
     transition: .3s all ease;
     position: absolute;
     left: 0em;
-    width: 10em;
+    width: 11.5em;
     height: 100%;
     color: black;
     background-color: var(--lightGrey);
