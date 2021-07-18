@@ -1,5 +1,6 @@
 :root {
     --white: rgb(223, 228, 230);
+    --lightGrey: rgb(145, 150, 158);
     --ff-accent1: 'Overlock SC', cursive;
     --ff-accent2: 'Oxanium', cursive;
     --ff-main: 'Zen Dots', cursive; 
@@ -25,9 +26,9 @@ body {
     position: absolute;
     left: 0em;
     width: 8em;
-    height: 100vh;
+    height: 100%;
     color: black;
-    background-color: var(--white);
+    background-color: var(--lightGrey);
     z-index: 9999;
 }
 
@@ -44,6 +45,7 @@ body {
 
 .navbar__child:hover {
     cursor: pointer;
+    background-color: var(--white);
 }
 
 .hamburger {
