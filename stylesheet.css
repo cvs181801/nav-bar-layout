@@ -51,6 +51,7 @@ body {
 }
 
 .hamburger {
+    border: 2px solid red;
     position: absolute;
     cursor: pointer;
     top: 10px;
@@ -58,6 +59,7 @@ body {
 }
 
 .hamburger span {
+    border: 2px solid yellow;
     display: block;
     background-color: var(--white);
     border-radius: 12px;
