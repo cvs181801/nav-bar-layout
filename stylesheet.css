@@ -65,6 +65,7 @@ body {
     margin: .3em;
     width: 2em;
     transition: 0.3s;
+    position: relative;
 }
 
 .first__bar,
