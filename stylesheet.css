@@ -69,8 +69,7 @@ body {
 
 .change.first__bar {
     transform: rotate(45deg);
-    top: 50px;
-    background-color: yellow;
+    top: 3em;
 }
 
 .change.second__bar {
