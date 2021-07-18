@@ -51,7 +51,19 @@ body {
 }
 
 .hamburger {
+    position: absolute;
+    top: .75em;
+    right: -11.5em;
+}
+
+.hamburger span {
+    display: block;
     background-color: var(--white);
+    border-radius: 12px;
+    height: .2em;
+    margin: .2em;
+    width: 2em;
+
 }
 
 .main__div {
@@ -65,7 +77,9 @@ img {
     max-height: 1050px;
 }
 
-p, h1 {
+p,
+h1,
+h2 {
     text-align: center;
     letter-spacing: 0.2rem;
 }
