@@ -69,15 +69,15 @@ body {
     position: relative;
 }
 
-.first__bar,
+/*.first__bar,
 .second__bar,
 .third__bar {
     position: absolute;
-}
+}*/
 
 .change.first__bar {
     transform: rotate(45deg);
-    
+    top: 11px;
 }
 
 .change.second__bar {
@@ -86,7 +86,7 @@ body {
 
 .change.third__bar {
     transform: rotate(-45deg);
-   
+    bottom: 13px;
 }
 
 .main__div {
