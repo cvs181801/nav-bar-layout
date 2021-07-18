@@ -68,6 +68,7 @@ body {
 }
 
 .first__bar,
+.second__bar,
 .third__bar {
     position: absolute;
 }
