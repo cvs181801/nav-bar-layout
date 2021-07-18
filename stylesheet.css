@@ -51,14 +51,12 @@ body {
 }
 
 .hamburger {
-    border: 2px solid red;
     position: absolute;
     cursor: pointer;
     
 }
 
 .hamburger span {
-    border: 2px solid yellow;
     display: block;
     background-color: var(--white);
     border-radius: 12px;
@@ -68,12 +66,6 @@ body {
     transition: 0.3s;
     position: relative;
 }
-
-/*.first__bar,
-.second__bar,
-.third__bar {
-    position: absolute;
-}*/
 
 .change.first__bar {
     transform: rotate(45deg);
@@ -92,6 +84,10 @@ body {
 .main__div {
     margin: 0 auto;
     max-width: 1500px;
+}
+
+.shift {
+    left: 11.5em;
 }
 
 img {
