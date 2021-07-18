@@ -24,8 +24,9 @@ body {
     transition: .3s all ease;
     position: absolute;
     left: 0em;
-    width: 3em;
+    width: 8em;
     height: 100vh;
+    color: black;
     background-color: var(--white);
     z-index: 9999;
 }
