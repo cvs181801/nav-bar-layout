@@ -25,7 +25,7 @@ body {
     transition: .3s all ease;
     position: absolute;
     left: 0em;
-    width: 8em;
+    width: 10em;
     height: 100%;
     color: black;
     background-color: var(--lightGrey);
@@ -40,7 +40,7 @@ body {
     transition: .3s all ease;
     font-family: var(--ff-accent2);
     text-transform: uppercase;
-    padding: .5em;
+    padding: .7em;
     font-weight: 700;
     letter-spacing: .2rem;
 }
@@ -71,7 +71,7 @@ p, h1 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
 
 p {
