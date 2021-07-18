@@ -52,6 +52,7 @@ body {
 
 .hamburger {
     position: absolute;
+    cursor: pointer;
     /*top: .75em;
     right: -11.5em;*/
 }
@@ -63,7 +64,19 @@ body {
     height: .3em;
     margin: .3em;
     width: 2em;
+    transition: 0.3s;
+}
 
+.change.first__bar {
+    transform: rotate(45deg);
+}
+
+.change.second__bar {
+    opacity: 0;
+}
+
+.change.third__bar {
+    transform: rotate(-45deg);
 }
 
 .main__div {
