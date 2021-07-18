@@ -23,7 +23,7 @@ body {
     list-style: none;
     transition: .3s all ease;
     position: absolute;
-    left: -7em;
+    left: -8em;
     width: 3em;
     height: 100vh;
     background-color: var(--white);
