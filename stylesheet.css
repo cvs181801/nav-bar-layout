@@ -53,7 +53,7 @@ body {
 .hamburger {
     position: absolute;
     cursor: pointer;
-    top: .5em;
+    top: -3em;
     /*right: -11.5em;*/
 }
 
