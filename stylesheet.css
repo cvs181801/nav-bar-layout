@@ -86,7 +86,7 @@ body {
 
 .change.third__bar {
     transform: rotate(-45deg);
-    bottom: .3em;
+    bottom: .5em;
 }
 
 .main__div {
