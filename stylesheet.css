@@ -34,6 +34,17 @@ body {
     left: 0em;
 }
 
+.navbar__child {
+    transition: .3s all ease;
+    font-family: var(--ff-accent2);
+    text-transform: uppercase;
+    padding: .5em;
+}
+
+.navbar__child:hover {
+    cursor: pointer;
+}
+
 .hamburger {
     background-color: var(--white);
 }
