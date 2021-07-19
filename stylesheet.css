@@ -102,7 +102,6 @@ body {
     height: 3em;
     border-radius: 50%;
     position: absolute;
-    opacity: 0;
     background-color:red;
 }
 
