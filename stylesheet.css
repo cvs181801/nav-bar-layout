@@ -81,6 +81,15 @@ body {
     bottom: .6em;
 }
 
+.main__img.cursor {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    border: 2px solid red;
+}
+
 .main__div {
     margin: 0 auto;
     max-width: 1500px;
