@@ -81,7 +81,7 @@ body {
     bottom: .6em;
 }
 
-.main__img.cursor {
+.cursor {
     width: 3em;
     height: 3em;
     border-radius: 50%;
