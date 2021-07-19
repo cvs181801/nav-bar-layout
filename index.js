@@ -7,5 +7,5 @@ mainImageDiv.addEventListener('mouseover', function(e) {
     e.preventDefault;
     filterCursor.style.top = e.pageY + "px";
     filterCursor.style.left = e.pageX +"px";
-    mainImageDiv.style.opacity = 1;
+    //mainImageDiv.style.opacity = 1;
 })
