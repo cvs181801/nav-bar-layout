@@ -102,7 +102,7 @@ body {
     height: 3em;
     border-radius: 50%;
     position: absolute;
-    background-color:red;
+    border: 1px solid rgb(124, 171, 243);
 }
 
 
