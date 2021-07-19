@@ -101,11 +101,12 @@ h1,
 h2 {
     text-align: center;
     letter-spacing: 0.2rem;
+    text-shadow: 0px 2px 3px white;
 }
 
 h1 {
     font-size: 3.5rem;
-    text-shadow: 0px 2px 3px var(--white);
+    text-shadow: 0px 2px 3px white;
 }
 
 p {
