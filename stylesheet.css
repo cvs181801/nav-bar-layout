@@ -98,11 +98,14 @@ body {
 }
 
 .cursor {
-    width: 3em;
-    height: 3em;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
     position: absolute;
     border: 1px solid rgb(124, 171, 243);
+    background-color: rgb(124, 171, 243);
+    opacity: .8;
+    filter: brightness(0.4);
 }
 
 
