@@ -105,6 +105,7 @@ h2 {
 
 h1 {
     font-size: 3.5rem;
+    text-shadow: 0px 2px 3px var(--white);
 }
 
 p {
