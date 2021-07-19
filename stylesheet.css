@@ -26,7 +26,7 @@ body {
     position: absolute;
     left: -11.5em;
     width: 11.5em;
-    height: 100%;
+    min-height: 100%;
     color: black;
     background-color: var(--lightGrey);
     z-index: 9999;
@@ -86,15 +86,25 @@ body {
     max-width: 1500px;
 }
 
+.img__div {
+    background-image: url("/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg");
+    background-color: #404040;
+    background-blend-mode: multiply;
+    opacity: .8;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
+
 .shift {
     margin-left: 11.5em;
 }
 
-img {
+/*img {
     object-fit: cover;
     width: 100%;
     max-height: 1050px;
-}
+}*/
 
 p,
 h1,
@@ -102,11 +112,13 @@ h2 {
     text-align: center;
     letter-spacing: 0.2rem;
     text-shadow: 0px 2px 3px white;
+    letter-spacing: .2rem;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     text-shadow: 0px 2px 3px white;
+    margin-bottom: 1.5em;
 }
 
 p {
