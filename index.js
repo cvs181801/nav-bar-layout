@@ -14,7 +14,7 @@ console.log(mainImageDiv);
    
 // })
 
-document.getElementById("main__img").onmousemove = cursor.mouseMove;
+document.getElementById("main__img").onmousemove = filterCursor.mouseMove;
 
 cursor.mouseMove = function(mouseMovement) {
     filterCursor = document.querySelector(".cursor");
