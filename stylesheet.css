@@ -104,7 +104,7 @@ body {
     position: absolute;
     border: 1px solid rgb(124, 171, 243);
     background-color: rgb(59, 105, 230);
-    opacity: .8;
+    opacity: .4;
     filter: brightness(0.9);
     transform: translate(-50%, -50%);
     pointer-events: none;
@@ -142,4 +142,5 @@ p {
 .link__grow {
     transform: scale(2);
     background-color: aquamarine;
+    opacity: .5;
 }
