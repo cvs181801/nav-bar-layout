@@ -106,6 +106,7 @@ body {
     background-color: rgb(124, 171, 243);
     opacity: .8;
     filter: brightness(0.4);
+    transform: translate(-50%, -50%);
 }
 
 .shift {
