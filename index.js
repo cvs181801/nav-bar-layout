@@ -34,5 +34,6 @@ console.log(mainImageDiv);
 window.addEventListener("mousemove", cursor);
 
 function cursor(e) {
-    console.log(e);
+    filterCursor.style.top = e.pageY + 'px';
+    filterCursor.style.left = e.pageX + 'px';
 }
