@@ -16,7 +16,7 @@ console.log(mainImageDiv);
 
 document.getElementById("main__img").onmousemove = filterCursor.mouseMove;
 
-cursor.mouseMove = function(mouseMovement) {
+filterCursor.mouseMove = function(mouseMovement) {
     filterCursor = document.querySelector(".cursor");
     let xPosition;
     let yPosition;
