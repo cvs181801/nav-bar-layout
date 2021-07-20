@@ -98,11 +98,11 @@ body {
 }
 
 .cursor {
-    width: 10em;
-    height: 10em;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
     position: absolute;
-    border: 1px solid rgb(124, 171, 243);
+    border: 2px solid rgb(124, 171, 243);
     background-color: rgb(59, 105, 230);
     opacity: .4;
     filter: brightness(0.9);
@@ -143,4 +143,5 @@ p {
     transform: scale(2);
     background-color: aquamarine;
     opacity: .5;
+    
 }

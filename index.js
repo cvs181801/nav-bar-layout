@@ -4,8 +4,8 @@ let filterCursor = document.querySelector(".cursor");
 const mainImageDiv = document.querySelector(".main__img");
 const valueBuilder = document.querySelectorAll(".value__build");
 
-console.log(filterCursor);
-console.log(mainImageDiv);
+console.log(valueBuilder);
+
 
 window.addEventListener("mousemove", cursor);
 
