@@ -14,16 +14,25 @@ console.log(mainImageDiv);
    
 // })
 
-document.getElementById("main__img").onmousemove = filterCursor.mouseMove;
+//try again
+// document.getElementById("main__img").onmousemove = filterCursor.mouseMove;
 
-filterCursor.mouseMove = function(mouseMovement) {
-    filterCursor = document.querySelector(".cursor");
-    let xPosition;
-    let yPosition;
-    if(mouseMovement) {
-        xPosition = mouseMovement.pageX;
-        yPosition = mouseMovement.pageY;
-        filterCursor.style.top = yPosition + 1 + "px";
-        filterCursor.style.left = xPosition + "px";
-    }
+// filterCursor.mouseMove = function(mouseMovement) {
+//     filterCursor = document.querySelector(".cursor");
+//     let xPosition;
+//     let yPosition;
+//     if(mouseMovement) {
+//         xPosition = mouseMovement.pageX;
+//         yPosition = mouseMovement.pageY;
+//         filterCursor.style.top = yPosition + 1 + "px";
+//         filterCursor.style.left = xPosition + "px";
+//     }
+// }
+
+//try again
+
+window.addEventListener("mousemove", cursor);
+
+function cursor(e) {
+    console.log(e);
 }
