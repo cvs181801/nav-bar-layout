@@ -18,9 +18,9 @@ function cursor(e) {
 //make the cursor grow and the colors change when hovering over the value builders
 valueBuilder.forEach(div => {
     div.addEventListener('mouseleave', () => {
-        classList.remove("link__grow");
+        filterCursor.classList.remove("link__grow");
     });
     div.addEventListener('mouseover', () => {
-        classList.add("link__grow");
+        filterCursor.classList.add("link__grow");
     });
 });
