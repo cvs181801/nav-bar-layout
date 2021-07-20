@@ -95,6 +95,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background-size: cover;
+    display: grid;
 }
 
 .cursor {
@@ -137,11 +138,14 @@ p {
 .value__build {
     font-family: var(--ff-accent2);
     color: red;
+    grid-template-columns: 8em auto;
+    
 }
 
 .link__grow {
     transform: scale(2);
     background-color: aquamarine;
+    border: 2px solid rgb(219, 247, 240);
     opacity: .5;
     transition: all 0.3s ease;
     transition-property: background, transform;
