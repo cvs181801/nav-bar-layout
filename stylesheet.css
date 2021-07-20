@@ -138,3 +138,8 @@ p {
     font-family: var(--ff-accent2);
     color: red;
 }
+
+.link__grow {
+    transform: scale(2);
+    background-color: aquamarine;
+}
