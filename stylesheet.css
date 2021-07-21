@@ -151,6 +151,11 @@ p {
     margin: 0 auto;
 }
 
+.grid__div__1,
+.grid__div__2 {
+    padding: 2em;
+}
+
 .link__grow {
     transform: scale(2.7);
     background-color: aquamarine;
