@@ -96,9 +96,9 @@ body {
     min-height: 100vh;
     background-size: cover;
     display: grid;
-    grid-gap: .5em;
+    gap: 1em;
     grid-auto-flow: column;
-    /*grid-template-rows: 5em;*/
+    grid-template-rows: 5em;
 }
 
 .cursor {
