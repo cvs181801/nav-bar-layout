@@ -97,7 +97,7 @@ body {
     background-size: cover;
     display: grid;
     gap: 1em;
-    grid-auto-flow: column;
+    grid-template-columns: 1.5em minmax(3em, 4em) minmax(1.5em, 3.5em) 1.5em;
     grid-template-rows: 5em;
 }
 
