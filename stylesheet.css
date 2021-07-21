@@ -96,8 +96,8 @@ body {
     min-height: 100vh;
     background-size: cover;
     display: grid;
-    gap: 1em;
-    grid-template-columns: 5em 1fr 5em;
+    gap: 5em;
+    grid-template-columns: 10em 1fr 10em;
     grid-template-areas:
     "grid__div__1"
     "grid__div__2"
