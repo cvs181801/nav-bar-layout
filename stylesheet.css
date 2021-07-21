@@ -138,15 +138,17 @@ p {
 .value__build {
     font-family: var(--ff-accent2);
     color: red;
-    grid-template-columns: 8em auto;
-    
+    font-size: 2rem;
+    font-weight: 700;
+    grid-template-columns: 5em auto;
+    grid-template-rows: auto;
 }
 
 .link__grow {
-    transform: scale(2);
+    transform: scale(2.7);
     background-color: aquamarine;
     border: 2px solid rgb(219, 247, 240);
-    opacity: .5;
+    opacity: .6;
     transition: all 0.3s ease;
     transition-property: background, transform;
 }
