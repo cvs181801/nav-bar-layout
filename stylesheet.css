@@ -141,7 +141,7 @@ p {
 .value__build {
     font-family: var(--ff-accent2);
     color: red;
-    font-size: 2rem;
+    text-transform: uppercase;
     font-weight: 700;
     /*grid-template-columns: 5em auto;
     grid-template-rows: auto;*/
