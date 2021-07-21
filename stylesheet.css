@@ -114,7 +114,6 @@ body {
     filter: brightness(0.9);
     transform: translate(-50%, -50%);
     pointer-events: none;
-    /*z-index: 9998;*/
 }
 
 .shift {
@@ -149,6 +148,7 @@ p {
     grid-template-rows: auto;*/
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
 }
 
 .link__grow {
