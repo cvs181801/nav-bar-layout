@@ -41,7 +41,9 @@ hamburger.addEventListener('click', function(e) {
     hamBar2.classList.add("change");
     hamBar3.classList.add("change");
     mainDiv.classList.add("shift");
-    valueBuildContainer.classList.add(".shift");
-    hamburger.classList.add(".shift");
+    valueBuildContainer.classList.add("shift");
+    hamburger.classList.add("shift");
+    //hamBar1.classList.add("shift");
+    //hamBar2.classList.add("shift");
 })
 
