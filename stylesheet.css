@@ -149,6 +149,8 @@ p {
     text-align: center;
     align-content: center;
     border: 2px solid magenta;
+    position: absolute;
+    top: 6em;
 }
 
 .value__build {
