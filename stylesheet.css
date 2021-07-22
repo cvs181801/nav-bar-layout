@@ -147,6 +147,7 @@ p {
     justify-content: center;
     text-align: center;
     align-content: center;
+    margin-top: 10em;
 }
 
 .value__build {
