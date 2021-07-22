@@ -95,7 +95,8 @@ body {
     width: 100%;
     min-height: 100vh;
     background-size: cover;
-    
+    justify-content: center;
+    text-align: center;
 }
 
 .cursor {
@@ -141,6 +142,9 @@ p {
     gap: 1.5em;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 5em;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
 }
 
 .value__build {
