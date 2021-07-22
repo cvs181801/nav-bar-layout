@@ -98,7 +98,7 @@ body {
     justify-content: center;
     text-align: center;
     align-content: center;
-    border: 2px solid magenta;
+
 }
 
 .cursor {
@@ -131,6 +131,7 @@ h1 {
     font-size: 5rem;
     text-shadow: 0px 2px 3px white;
     margin-bottom: 1em;
+    margin-top: 1.5em;
 }
 
 p {
@@ -148,7 +149,6 @@ p {
     justify-content: center;
     text-align: center;
     align-content: center;
-    border: 2px solid magenta;
     position: absolute;
     top: 37em;
     left: 15em;
@@ -158,11 +158,12 @@ p {
     font-family: var(--ff-accent2);
     color: red;
     text-transform: uppercase;
+    letter-spacing: .2rem;
     font-weight: 700;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    border: 2px solid magenta;
+
 }
 
 .link__grow {
