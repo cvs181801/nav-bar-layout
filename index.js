@@ -9,6 +9,7 @@ const hamBar1 = document.querySelector(".first__bar");
 const hamBar2 = document.querySelector(".second__bar");
 const hamBar3 = document.querySelector(".third__bar");
 const mainDiv = document.querySelector(".main__div");
+const valueBuildContainer = document.querySelector(".value__build__contain");
 
 console.log(valueBuilder);
 
@@ -40,5 +41,7 @@ hamburger.addEventListener('click', function(e) {
     hamBar2.classList.add("change");
     hamBar3.classList.add("change");
     mainDiv.classList.add("shift");
+    valueBuildContainer.classList.add(".shift");
+    hamburger.classList.add(".shift");
 })
 
