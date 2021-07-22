@@ -12,7 +12,7 @@ const mainDiv = document.querySelector(".main__div");
 const valueBuildContainer = document.querySelector(".value__build__contain");
 const hamburgerShift = document.querySelector(".shift");
 
-console.log(valueBuilder);
+console.log(hamburgerShift);
 
 
 window.addEventListener("mousemove", cursor);
@@ -47,7 +47,6 @@ hamburger.addEventListener('click', function(e) {
     //hamBar1.classList.add("shift");
     //hamBar2.classList.add("shift");
 })
-
 
 hamburgerShift.addEventListener("click", function(e) {
     e.preventDefault;
