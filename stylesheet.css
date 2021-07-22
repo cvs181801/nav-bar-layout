@@ -97,6 +97,7 @@ body {
     background-size: cover;
     justify-content: center;
     text-align: center;
+    align-content: center;
 }
 
 .cursor {
@@ -145,6 +146,7 @@ p {
     margin: 0 auto;
     justify-content: center;
     text-align: center;
+    align-content: center;
 }
 
 .value__build {
