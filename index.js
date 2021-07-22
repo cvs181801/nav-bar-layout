@@ -10,6 +10,7 @@ const hamBar2 = document.querySelector(".second__bar");
 const hamBar3 = document.querySelector(".third__bar");
 const mainDiv = document.querySelector(".main__div");
 const valueBuildContainer = document.querySelector(".value__build__contain");
+const hamburgerShift = document.querySelector(".shift");
 
 console.log(valueBuilder);
 
@@ -47,3 +48,14 @@ hamburger.addEventListener('click', function(e) {
     //hamBar2.classList.add("shift");
 })
 
+
+hamburgerShift.addEventListener("click", function(e) {
+    e.preventDefault;
+    navBar.classList.remove("open");
+    hamBar1.classList.remove("change");
+    hamBar2.classList.remove("change");
+    hamBar3.classList.remove("change");
+    mainDiv.classList.remove("shift");
+    valueBuildContainer.classList.remove("shift");
+    hamburger.classList.remove("shift");
+})
