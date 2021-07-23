@@ -1,6 +1,7 @@
 :root {
     --white: rgb(223, 228, 230);
     --lightGrey: rgb(145, 150, 158);
+    --royalBlue: rgb(59, 105, 230);
     --ff-accent1: 'Overlock SC', cursive;
     --ff-accent2: 'Oxanium', cursive;
     --ff-main: 'Zen Dots', cursive; 
@@ -67,7 +68,7 @@ body {
     position: relative;
 }
 
-.hamburger span:hover {
+.hamburger:hover {
     /*color: black;
     font-size: 3rem;
     font-weight: 700;*/
@@ -75,11 +76,11 @@ body {
     0 0 7px #fff,
     0 0 10px #fff,
     0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa; 
+    0 0 42px rgb(139, 224, 245),
+    0 0 82px rgb(139, 224, 245),
+    0 0 92px rgb(139, 224, 245),
+    0 0 102px rgb(139, 224, 245),
+    0 0 151px rgb(139, 224, 245),
 }
 
 .change.first__bar {
@@ -192,4 +193,13 @@ p {
     opacity: .6;
     transition: all 0.3s ease;
     transition-property: background, transform;
+}
+
+@media (max-width: 400px) {
+    .value__build__contain {
+        display: block;
+        position: relative;
+        top: auto;
+        left: auto;
+    }
 }
