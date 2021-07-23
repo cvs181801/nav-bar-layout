@@ -204,13 +204,11 @@ p {
     .value__build__contain {
         display: block;
         position: relative;
-        top: auto;
+        top: 4em;
         left: auto;
         width: auto; 
     }
-    #value__build__1 {
-        margin-top: 6em;
-    }
+    
     .value__build {
         font-size: 1rem;
         /*margin-bottom: 1.5em;*/
