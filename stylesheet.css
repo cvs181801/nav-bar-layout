@@ -202,7 +202,9 @@ p {
         position: relative;
         top: auto;
         left: auto;
-        width: auto;
+        width: auto; 
+    }
+    .value__build {
         font-size: 1rem;
         margin-bottom: 1.5em;
     }
