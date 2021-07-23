@@ -10,14 +10,10 @@ const hamBar2 = document.querySelector(".second__bar");
 const hamBar3 = document.querySelector(".third__bar");
 const mainDiv = document.querySelector(".main__div");
 const valueBuildContainer = document.querySelector(".value__build__contain");
-const hamburgerShift = document.querySelector(".shift");
-
-console.log(hamburgerShift);
-
-
-window.addEventListener("mousemove", cursor);
 
 //make the cursor work
+window.addEventListener("mousemove", cursor);
+
 function cursor(e) {
     filterCursor.style.top = e.pageY + 'px';
     filterCursor.style.left = e.pageX + 'px';
@@ -32,6 +28,20 @@ valueBuilder.forEach(div => {
         filterCursor.classList.add("link__grow");
     });
 });
+
+//make the hamburger glow upon hovering over it 
+
+hamburger.addEventListener('mouseover', function(e) {
+    if(hamBar1.classList.contains("glow")) {
+        hamBar1.classList.remove("glow");
+        hamBar2.classList.remove("glow");
+        hamBar3.classList.remove("glow");
+    } else {
+        hamBar1.classList.add("glow");
+        hamBar2.classList.add("glow");
+        hamBar3.classList.add("glow");
+    }
+})
 
 //make the nav bar open and close
 
@@ -56,3 +66,4 @@ hamburger.addEventListener('click', function(e) {
             hamburger.classList.add("shift");
     }
 })
+
