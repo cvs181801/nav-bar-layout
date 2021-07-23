@@ -67,6 +67,21 @@ body {
     position: relative;
 }
 
+.hamburger span:hover {
+    /*color: black;
+    font-size: 3rem;
+    font-weight: 700;*/
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa; 
+}
+
 .change.first__bar {
     transform: rotate(45deg);
     top: .6em;
