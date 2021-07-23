@@ -183,6 +183,7 @@ p {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    font-size: 1.5rem;
 
 }
 
@@ -201,5 +202,6 @@ p {
         position: relative;
         top: auto;
         left: auto;
+        width: auto;
     }
 }
