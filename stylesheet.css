@@ -68,10 +68,7 @@ body {
     position: relative;
 }
 
-.hamburger:hover {
-    /*color: black;
-    font-size: 3rem;
-    font-weight: 700;*/
+.hamburger span:hover {
     -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
     -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
     box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
