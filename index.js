@@ -56,5 +56,5 @@ hamburgerShift.addEventListener("click", function(e) {
     hamBar3.classList.remove("change");
     mainDiv.classList.remove("shift");
     valueBuildContainer.classList.remove("shift");
-    hamburger.classList.remove("shift");
+    hamburgerShift.classList.remove("shift");
 })
