@@ -197,12 +197,19 @@ p {
 }
 
 @media (max-width: 600px) {
+    h1 {
+        font-size: 4rem;
+        padding: .5em;
+    }
     .value__build__contain {
         display: block;
         position: relative;
         top: auto;
         left: auto;
         width: auto; 
+    }
+    #value__build__1 {
+        margin-top: 6em;
     }
     .value__build {
         font-size: 1rem;
