@@ -36,25 +36,23 @@ valueBuilder.forEach(div => {
 //make the nav bar open and close
 
 hamburger.addEventListener('click', function(e) {
-    e.preventDefault;
-    navBar.classList.add("open");
-    hamBar1.classList.add("change");
-    hamBar2.classList.add("change");
-    hamBar3.classList.add("change");
-    mainDiv.classList.add("shift");
-    valueBuildContainer.classList.add("shift");
-    hamburger.classList.add("shift");
-    //hamBar1.classList.add("shift");
-    //hamBar2.classList.add("shift");
-})
-
-hamburgerShift.addEventListener("click", function(e) {
-    e.preventDefault;
-    navBar.classList.remove("open");
-    hamBar1.classList.remove("change");
-    hamBar2.classList.remove("change");
-    hamBar3.classList.remove("change");
-    mainDiv.classList.remove("shift");
-    valueBuildContainer.classList.remove("shift");
-    hamburgerShift.classList.remove("shift");
+    if (navBar.classList.contains("open")) {
+            e.preventDefault;
+            navBar.classList.remove("open");
+            hamBar1.classList.remove("change");
+            hamBar2.classList.remove("change");
+            hamBar3.classList.remove("change");
+            mainDiv.classList.remove("shift");
+            valueBuildContainer.classList.remove("shift");
+            hamburger.classList.remove("shift");
+    } else {
+            e.preventDefault;
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            valueBuildContainer.classList.add("shift");
+            hamburger.classList.add("shift");
+    }
 })
