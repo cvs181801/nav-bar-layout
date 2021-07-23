@@ -204,6 +204,6 @@ p {
         left: auto;
         width: auto;
         font-size: 1rem;
-        padding: 1.5em;
+        margin-bottom: 1.5em;
     }
 }
