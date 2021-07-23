@@ -204,7 +204,7 @@ p {
     .value__build__contain {
         display: block;
         position: relative;
-        top: 8em;
+        top: 10em;
         left: auto;
         width: auto; 
     }
