@@ -51,7 +51,10 @@ body {
     text-transform: uppercase;
     padding: .7em;
     font-weight: 700;
-    letter-spacing: .2rem;
+    letter-spacing: .2rem;  
+}
+
+.navbar_child a {
     text-decoration: none;
 }
 
@@ -124,6 +127,10 @@ body {
 
 .about__pg__title {
     margin-bottom: 2em;
+}
+
+.contact__pg__title {
+    font-family: var(--ff-accent2);
 }
 
 .main__img {
