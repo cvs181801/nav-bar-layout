@@ -232,6 +232,8 @@ p {
     transition-property: background, transform;
 }
 
+/*MEDIA QUERY*/
+
 @media (max-width: 600px) {
     h1 {
         font-size: 4rem;
