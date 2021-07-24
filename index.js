@@ -54,14 +54,16 @@ hamburger.addEventListener('click', function(e) {
 })
 
 //make the navbar highlight the page the user is currently on
-//const currentLocation = location.href;
-//const menuItem = document.querySelectorAll('a');
-const navBarSelector = document.querySelector(".navbar__child");
-console.log(navBarSelector);
-const navLength = navBarSelector.length;
-for(let i = 0; i < navLength; i++ ) {
-   if(navBarSelector[i].onClick) {
-    navBarSelector[i].className.add = "active";
+const currentLocation = location.href;
+let anchorArray = document.querySelectorAll('a');
+let navBarArray = document.querySelector(".navbar__child");
+let navBarArray = [...anchorArray];
+console.log(navBarArray);
+const navBarLength= navBarArray.length;
+for(let i = 0; i < navBarLength; i++ ) {
+   if(navBarArray[i].href === currentLocation) {
+       console.log("we are on the current href");
+    //navBarArray[i].className.add = "active";
    }
 }
 
