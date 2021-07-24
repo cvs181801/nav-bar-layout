@@ -131,6 +131,10 @@ a {
     margin-bottom: 1.5em;
 }
 
+.about__pg__title1 {
+    font-size: 2em;
+}
+
 .contact__pg__title {
     font-family: var(--ff-accent2);
     margin-bottom: .75em;
