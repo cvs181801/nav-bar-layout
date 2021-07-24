@@ -65,8 +65,9 @@ for(let i = 0; i < menuLength; i++ ) {
    }
 }
 
-const home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
+
 hamburger.addEventListener('click', function(e) {
+    const home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
     if (currentLocation === home && navBar.classList.contains("open")) {
         e.preventDefault;
         valueBuildContainer.classList.remove("shift");
