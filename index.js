@@ -29,19 +29,6 @@ valueBuilder.forEach(div => {
     });
 });
 
-//make the hamburger glow upon hovering over it 
-
-hamburger.addEventListener('mouseover', function(e) {
-    // if(hamBar1.classList.contains("glow")) {
-    //     hamBar1.classList.remove("glow");
-    //     hamBar2.classList.remove("glow");
-    //     hamBar3.classList.remove("glow");
-    // } else {
-        hamBar1.classList.add("glow");
-        hamBar2.classList.add("glow");
-        hamBar3.classList.add("glow");
-    
-})
 
 //make the nav bar open and close
 
@@ -67,3 +54,12 @@ hamburger.addEventListener('click', function(e) {
     }
 })
 
+//make the navbar highlight the page the user is currently on
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('a');
+const menuLength = menuItem.length;
+for(let i = 0; i < menuLength; i++ ) {
+   if(menuItem[i].href === currentLocation) {
+       menuItem[i].className = "active";
+   }
+}

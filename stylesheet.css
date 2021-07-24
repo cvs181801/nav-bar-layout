@@ -33,6 +33,10 @@ body {
     z-index: 9999;
 }
 
+.active {
+    background-color: var(--white);
+}
+
 .open {
     left: 0em;
 }
@@ -44,9 +48,11 @@ body {
     padding: .7em;
     font-weight: 700;
     letter-spacing: .2rem;
+    text-decoration: none;
 }
 
-.navbar__child:hover {
+.navbar__child:hover,
+.navbar__child:focus {
     cursor: pointer;
     background-color: var(--white);
 }
@@ -112,6 +118,19 @@ body {
 
 .main__img {
     background-image: url("/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg");
+    background-color: #404040;
+    background-blend-mode: multiply;
+    opacity: .8;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.main__img__2 {
+    background-image: url("/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/michal-biernat-h0xEUQXzU38-unsplash.jpeg");
     background-color: #404040;
     background-blend-mode: multiply;
     opacity: .8;
