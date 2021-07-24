@@ -65,14 +65,15 @@ for(let i = 0; i < menuLength; i++ ) {
    }
 }
 
-
+//this isn't yet working *** make the value builders shift on the home page when navbar pops out
 hamburger.addEventListener('click', function(e) {
-    const home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
-    if (currentLocation === home && navBar.classList.contains("open")) {
-        e.preventDefault;
-        valueBuildContainer.classList.remove("shift");
-    } else {
-        e.preventDefault;
-        valueBuildContainer.classList.add("shift");
-    }
+    console.log("value builders e listener worked")
+    // const home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
+    // if (currentLocation === home && navBar.classList.contains("open")) {
+    //     e.preventDefault;
+    //     valueBuildContainer.classList.remove("shift");
+    // } else {
+    //     e.preventDefault;
+    //     valueBuildContainer.classList.add("shift");
+    // }
 })    
