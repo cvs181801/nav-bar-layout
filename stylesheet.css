@@ -266,7 +266,7 @@ p {
     transform: scale(2.7);
     background-color: aquamarine;
     border: 2px solid rgb(219, 247, 240);
-    opacity: .6;
+    opacity: .2;
     transition: all 0.3s ease;
     transition-property: background, transform;
 }
