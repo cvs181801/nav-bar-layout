@@ -41,7 +41,7 @@ hamburger.addEventListener('click', function(e) {
             hamBar2.classList.remove("change");
             hamBar3.classList.remove("change");
             mainDiv.classList.remove("shift");
-            valueBuildContainer.classList.remove("shift");
+            //valueBuildContainer.classList.remove("shift");
             hamburger.classList.remove("shift");
     } else {
             e.preventDefault;
