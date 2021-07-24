@@ -160,15 +160,15 @@ a {
     opacity: .8;
     width: 100%;
     min-height: 100vh;
-    background-size: cover;
+    /*background-size: cover;*/
     justify-content: center;
     text-align: center;
     align-content: center;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .main__img__3 {
-    background-image: url("/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/michal-biernat-h0xEUQXzU38-unsplash.jpeg");
+    background-image: url("/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg");
     background-color: #404040;
     background-blend-mode: multiply;
     opacity: .8;
@@ -178,6 +178,12 @@ a {
     justify-content: center;
     text-align: center;
     align-content: center;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    max-height: 850px;
 }
 
 .cursor {
