@@ -54,8 +54,8 @@ body {
     letter-spacing: .2rem;  
 }
 
-.navbar_child a:visited {
-    color: black;
+a {
+    color: inherit;
 }
 
 .navbar__child:hover,
@@ -172,7 +172,6 @@ body {
     justify-content: center;
     text-align: center;
     align-content: center;
-
 }
 
 .cursor {
