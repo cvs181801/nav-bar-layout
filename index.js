@@ -57,11 +57,11 @@ hamburger.addEventListener('click', function(e) {
 const currentLocation = location.href;
 let anchorArray = document.querySelectorAll('a');
 let navBarArray = document.querySelector(".navbar__child");
-navBarArray = [...anchorArray];
-console.log(navBarArray);
-const navBarLength= navBarArray.length;
+newArray = [...anchorArray, navBarArray];
+console.log("newArray:", newArray);
+const navBarLength = newArray.length;
 for(let i = 0; i < navBarLength; i++ ) {
-   if(navBarArray[i].href === currentLocation) {
+   if(newArray[i].href === currentLocation) {
        console.log("we are on the current href");
     //navBarArray[i].className.add = "active";
    }
