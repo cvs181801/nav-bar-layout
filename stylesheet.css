@@ -53,8 +53,7 @@ body {
 
 .hamburger {
     position: absolute;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 .hamburger span {
