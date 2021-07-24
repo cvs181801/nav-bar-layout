@@ -34,7 +34,7 @@ body {
     min-height: 100%;
     color: black;
     background-color: var(--lightGrey);
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .active {
@@ -54,8 +54,8 @@ body {
     letter-spacing: .2rem;  
 }
 
-.navbar_child a {
-    text-decoration: none;
+.navbar_child a:visited {
+    color: black;
 }
 
 .navbar__child:hover,
@@ -69,6 +69,7 @@ body {
 .hamburger {
     position: absolute;
     cursor: pointer;  
+    z-index: 9998;
 }
 
 .hamburger span {
@@ -126,11 +127,12 @@ body {
 }
 
 .about__pg__title {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 .contact__pg__title {
     font-family: var(--ff-accent2);
+    margin-bottom: .75em;
 }
 
 .main__img {
@@ -157,6 +159,20 @@ body {
     justify-content: center;
     text-align: center;
     align-content: center;
+}
+
+.main__img__3 {
+    background-image: url("/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/michal-biernat-h0xEUQXzU38-unsplash.jpeg");
+    background-color: #404040;
+    background-blend-mode: multiply;
+    opacity: .8;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+
 }
 
 .cursor {
