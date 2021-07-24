@@ -62,8 +62,8 @@ console.log("newArray:", newArray);
 const navBarLength = newArray.length;
 for(let i = 0; i < navBarLength; i++ ) {
    if(newArray[i].href === currentLocation) {
-       console.log("we are on the current href");
-    //newArray[i].className.add = "active";
+       //console.log("we are on the current href");
+    newArray[i + 6].className.add = "active";
    }
 }
 
