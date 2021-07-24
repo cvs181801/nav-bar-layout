@@ -164,6 +164,7 @@ a {
     justify-content: center;
     text-align: center;
     align-content: center;
+    object-fit: cover;
 }
 
 .main__img__3 {

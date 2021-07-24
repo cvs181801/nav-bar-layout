@@ -41,7 +41,6 @@ hamburger.addEventListener('click', function(e) {
             hamBar2.classList.remove("change");
             hamBar3.classList.remove("change");
             mainDiv.classList.remove("shift");
-            //valueBuildContainer.classList.remove("shift");
             hamburger.classList.remove("shift");
     } else {
             e.preventDefault;
@@ -50,7 +49,6 @@ hamburger.addEventListener('click', function(e) {
             hamBar2.classList.add("change");
             hamBar3.classList.add("change");
             mainDiv.classList.add("shift");
-            //valueBuildContainer.classList.add("shift");
             hamburger.classList.add("shift");
     }
 })
@@ -66,3 +64,14 @@ for(let i = 0; i < menuLength; i++ ) {
     navBarSelector[i].className.add = "active";
    }
 }
+
+const home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
+hamburger.addEventListener('click', function(e) {
+    if (currentLocation === home && navBar.classList.contains("open")) {
+        e.preventDefault;
+        valueBuildContainer.classList.remove("shift");
+    } else {
+        e.preventDefault;
+        valueBuildContainer.classList.add("shift");
+    }
+})    
