@@ -11,7 +11,6 @@ const hamBar3 = document.querySelector(".third__bar");
 const mainDiv = document.querySelector(".main__div");
 const valueBuildContainer = document.querySelector(".value__build__contain");
 const menuItem = document.querySelectorAll("a");
-const navBarSelector = document.querySelector(".navbar__child");
 
 //make the cursor work
 window.addEventListener("mousemove", cursor);
@@ -61,7 +60,7 @@ const navBarSelector = document.querySelector(".navbar__child");
 console.log(navBarSelector);
 const navLength = navBarSelector.length;
 for(let i = 0; i < navLength; i++ ) {
-   if(menuItem[i].href === currentLocation) {
+   if(navBarSelector[i].onClick) {
     navBarSelector[i].className.add = "active";
    }
 }
