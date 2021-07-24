@@ -57,7 +57,7 @@ hamburger.addEventListener('click', function(e) {
 const currentLocation = location.href;
 let anchorArray = document.querySelectorAll('a');
 let navBarArray = document.querySelector(".navbar__child");
-let navBarArray = [...anchorArray];
+navBarArray = [...anchorArray];
 console.log(navBarArray);
 const navBarLength= navBarArray.length;
 for(let i = 0; i < navBarLength; i++ ) {
