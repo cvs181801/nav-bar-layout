@@ -1,3 +1,5 @@
+/*BODY STYLING*/
+
 :root {
     --white: rgb(223, 228, 230);
     --lightGrey: rgb(145, 150, 158);
@@ -20,6 +22,8 @@ body {
     margin: 0 auto;
 
 }
+
+/*NAVBAR STYLING*/
 
 .nav__bar {
     list-style: none;
@@ -57,6 +61,8 @@ body {
     background-color: var(--white);
 }
 
+/*HAMBURGER STYLING*/
+
 .hamburger {
     position: absolute;
     cursor: pointer;  
@@ -73,9 +79,6 @@ body {
     position: relative;
 }
 
-/*.first__bar:hover,
-.second__bar:hover,
-.third__bar:hover*/ 
 .hamburger:hover > span {
     -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
     -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
@@ -96,10 +99,13 @@ body {
     bottom: .6em;
 }
 
+/*PAGE STYLING*/
+
 .img__div {
     font-family: var(--ff-accent2);
     margin: 0 auto;
     max-width: 900px;
+    margin-bottom: 1.5em;
 }
 
 .img__div img {
@@ -114,6 +120,10 @@ body {
 .main__div {
     margin: 0 auto;
     max-width: 1500px;
+}
+
+.about__pg__title {
+    margin-bottom: 2em;
 }
 
 .main__img {

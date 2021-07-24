@@ -56,7 +56,7 @@ hamburger.addEventListener('click', function(e) {
 
 //make the navbar highlight the page the user is currently on
 const currentLocation = location.href;
-const menuItem = document.querySelectorAll('a');
+const menuItem = document.querySelectorAll('.navbar__child');
 const menuLength = menuItem.length;
 for(let i = 0; i < menuLength; i++ ) {
    if(menuItem[i].href === currentLocation) {
