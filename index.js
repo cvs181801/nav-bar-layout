@@ -10,7 +10,8 @@ const hamBar2 = document.querySelector(".second__bar");
 const hamBar3 = document.querySelector(".third__bar");
 const mainDiv = document.querySelector(".main__div");
 const valueBuildContainer = document.querySelector(".value__build__contain");
-
+const menuItem = document.querySelectorAll("a");
+const navBarSelector = document.querySelector(".navbar__child");
 
 //make the cursor work
 window.addEventListener("mousemove", cursor);
@@ -54,12 +55,12 @@ hamburger.addEventListener('click', function(e) {
 })
 
 //make the navbar highlight the page the user is currently on
-const currentLocation = location.href;
-const menuItem = document.querySelectorAll('a');
+//const currentLocation = location.href;
+//const menuItem = document.querySelectorAll('a');
 const navBarSelector = document.querySelector(".navbar__child");
-console.log(menuItem);
-const menuLength = menuItem.length;
-for(let i = 0; i < menuLength; i++ ) {
+console.log(navBarSelector);
+const navLength = navBarSelector.length;
+for(let i = 0; i < navLength; i++ ) {
    if(menuItem[i].href === currentLocation) {
     navBarSelector[i].className.add = "active";
    }
