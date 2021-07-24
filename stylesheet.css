@@ -160,7 +160,8 @@ a {
     opacity: .8;
     width: 100%;
     min-height: 100vh;
-    /*background-size: cover;*/
+    background-size: cover;
+    background-position: center center;
     justify-content: center;
     text-align: center;
     align-content: center;
