@@ -233,6 +233,7 @@ h2 {
 p {
     color: var(--lightGrey);
     font-size: .5rem;
+    padding: .5em;
 }
 
 h1 {
