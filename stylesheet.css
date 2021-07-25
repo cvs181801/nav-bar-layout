@@ -240,6 +240,11 @@ p {
     font-size: .75rem;
 }
 
+.our__services {
+    margin: 0 auto;
+    
+}
+
 #value__build__contain {
     width: 60%;
     max-height: 10vh;

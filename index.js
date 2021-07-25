@@ -55,30 +55,15 @@ hamburger.addEventListener('click', function(e) {
     }
 })
 
-//make the navbar highlight the page the user is currently on *** this still isn't quite working
+//make the navbar highlight the page the user is currently on 
 const currentLocation = location.href;
 let anchorArray = document.querySelectorAll('a');
-//let navBarArray = document.querySelectorAll(".navbar__child");
-//newArray = [...anchorArray, ...navBarArray];
 console.log("anchorArray:", anchorArray);
 const navBarLength = anchorArray.length;
 for(let i = 0; i < navBarLength; i++ ) {
    if(anchorArray[i].href === currentLocation) {
-       //console.log("we are on the current href");
     anchorArray[i].className = "active";
    }
 }
 
 
-//this isn't yet working *** make the value builders shift on the home page when navbar pops out
-// hamburger.addEventListener('click', function(e) {
-//     console.log("value builders e listener worked")
-//     const home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
-//     if (navBar.classList.contains("open")) {
-//         e.preventDefault;
-//         valueBuildContainer.classList.remove("shift");
-//     } else {
-//         e.preventDefault;
-//         valueBuildContainer.classList.add("shift");
-//     }
-// })    
