@@ -273,6 +273,17 @@ p {
 }
 
 #value__build__containwhy {
+    width: 60%;
+    max-height: 10vh;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10em;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    position: absolute;
     top: 35em;
     left: 15em;
 }
