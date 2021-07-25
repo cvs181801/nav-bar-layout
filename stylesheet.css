@@ -331,6 +331,14 @@ p {
         padding: 1em;
     }
 
+    #value__build__containwhy {
+        display: block;
+        position: relative;
+        top: 10em;
+        left: auto;
+        width: auto; 
+    }
+
     .pg__titlewhy {
         margin-bottom: .5em;
     }
