@@ -233,7 +233,7 @@ p {
     font-size: .75rem;
 }
 
-.value__build__contain {
+#value__build__contain {
     width: 60%;
     max-height: 10vh;
     display: grid;

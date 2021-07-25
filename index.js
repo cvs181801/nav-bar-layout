@@ -12,7 +12,7 @@ const mainDiv = document.querySelector(".main__div");
 const valueBuildContainer = document.getElementById("value__build__contain");
 const menuItem = document.querySelectorAll("a");
 
-console.log("value build container:", valueBuildContainer);
+console.log(valueBuildContainer);
 
 //make the cursor work
 window.addEventListener("mousemove", cursor);
