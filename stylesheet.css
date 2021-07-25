@@ -246,6 +246,10 @@ p {
     padding: 1.5em;
 }
 
+.bluetxt {
+    color: var(--royalBlue);
+}
+
 #value__build__contain {
     width: 60%;
     max-height: 10vh;
