@@ -155,7 +155,7 @@ input:focus {
     transform: scale(1.1);
 }
 
-.submit-button {
+.submit__button {
     background-color: var(--white); 
     opacity: 1;
     border-radius: 7px;
@@ -169,8 +169,8 @@ input:focus {
     transition: transform 250ms;
 }
 
-.submit-button:hover,
-.submit-botton:focus {
+.submit__button:hover,
+.submit__botton:focus {
     color: white;
     background-color: black;
     transform: scale(1.1);
