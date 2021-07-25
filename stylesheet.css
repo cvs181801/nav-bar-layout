@@ -247,7 +247,7 @@ p {
 }
 
 .redtxt {
-    color: var(--royalBlue);
+    color: red;
 }
 
 #value__build__contain {
