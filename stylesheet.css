@@ -150,10 +150,15 @@ a {
 
 .about__pg__title1 {
     font-size: 2em;
+    margin-bottom: .5em;
 }
 
 .contact__pg__title {
     font-family: var(--ff-accent2);
+    margin-bottom: .75em;
+}
+
+.pg__subtitlewhy {
     margin-bottom: .75em;
 }
 
@@ -307,5 +312,9 @@ p {
         font-size: 1rem;
         margin-top: 3em;
         padding: 1em;
+    }
+
+    .pg__titlewhy {
+        margin-bottom: .5em;
     }
 }
