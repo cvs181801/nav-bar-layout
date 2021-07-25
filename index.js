@@ -9,10 +9,10 @@ const hamBar1 = document.querySelector(".first__bar");
 const hamBar2 = document.querySelector(".second__bar");
 const hamBar3 = document.querySelector(".third__bar");
 const mainDiv = document.querySelector(".main__div");
-//const valueBuildContainer = document.getElementById("value__build__contain");
 const menuItem = document.querySelectorAll("a");
+const growWhy = document.querySelectorAll("#why");
 
-//console.log(valueBuildContainer);
+console.log(growWhy);
 
 //make the cursor work
 window.addEventListener("mousemove", cursor);
@@ -22,7 +22,7 @@ function cursor(e) {
     filterCursor.style.left = e.pageX + 'px';
 }
 
-//make the cursor grow and the colors change when hovering over the red "value builders"
+//make the cursor grow and the colors change when hovering over the red "value builders" 
 valueBuilder.forEach(div => {
     div.addEventListener('mouseleave', () => {
         filterCursor.classList.remove("link__grow");
@@ -31,6 +31,16 @@ valueBuilder.forEach(div => {
         filterCursor.classList.add("link__grow");
     });
 });
+
+//make the cursor grow and the colors change when hovering over the titles on the 'why cyber security' page
+growWhy.forEach(title => {
+    title.addEventListener('mouseleave', () => {
+        filterCursor.classList.remove("link__grow");
+    });
+    title.addEventListener('mouseover', () => {
+        filterCursor.classList.add("link__grow");
+    })
+})
 
 
 //make the nav bar open and close
