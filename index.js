@@ -12,6 +12,8 @@ const mainDiv = document.querySelector(".main__div");
 const valueBuildContainer = document.querySelector(".value__build__contain");
 const menuItem = document.querySelectorAll("a");
 
+console.log("value build container:", valueBuildContainer);
+
 //make the cursor work
 window.addEventListener("mousemove", cursor);
 
@@ -56,26 +58,26 @@ hamburger.addEventListener('click', function(e) {
 //make the navbar highlight the page the user is currently on *** this still isn't quite working
 const currentLocation = location.href;
 let anchorArray = document.querySelectorAll('a');
-let navBarArray = document.querySelectorAll(".navbar__child");
-newArray = [...anchorArray, ...navBarArray];
-console.log("newArray:", newArray);
-const navBarLength = newArray.length;
+//let navBarArray = document.querySelectorAll(".navbar__child");
+//newArray = [...anchorArray, ...navBarArray];
+console.log("anchorArray:", anchorArray);
+const navBarLength = anchorArray.length;
 for(let i = 0; i < navBarLength; i++ ) {
-   if(newArray[i].href === currentLocation) {
+   if(anchorArray[i].href === currentLocation) {
        //console.log("we are on the current href");
-    newArray[i + 6].className.add = "active";
+    anchorArray[i].className.add = "active";
    }
 }
 
 //this isn't yet working *** make the value builders shift on the home page when navbar pops out
-hamburger.addEventListener('click', function(e) {
-    console.log("value builders e listener worked")
-    // const home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
-    // if (currentLocation === home && navBar.classList.contains("open")) {
-    //     e.preventDefault;
-    //     valueBuildContainer.classList.remove("shift");
-    // } else {
-    //     e.preventDefault;
-    //     valueBuildContainer.classList.add("shift");
-    // }
-})    
+// hamburger.addEventListener('click', function(e) {
+//     console.log("value builders e listener worked")
+//     const home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
+//     if (currentLocation === home && navBar.classList.contains("open")) {
+//         e.preventDefault;
+//         valueBuildContainer.classList.remove("shift");
+//     } else {
+//         e.preventDefault;
+//         valueBuildContainer.classList.add("shift");
+//     }
+// })    
