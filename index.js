@@ -9,7 +9,7 @@ const hamBar1 = document.querySelector(".first__bar");
 const hamBar2 = document.querySelector(".second__bar");
 const hamBar3 = document.querySelector(".third__bar");
 const mainDiv = document.querySelector(".main__div");
-const valueBuildContainer = document.getElementById("value__build__contain");
+//const valueBuildContainer = document.getElementById("value__build__contain");
 const menuItem = document.querySelectorAll("a");
 
 console.log(valueBuildContainer);
