@@ -65,9 +65,19 @@ const navBarLength = anchorArray.length;
 for(let i = 0; i < navBarLength; i++ ) {
    if(anchorArray[i].href === currentLocation) {
        //console.log("we are on the current href");
-    anchorArray[i].className.add = "active";
+    anchorArray[i].className = "active";
    }
 }
+
+
+// const currentLocation = location.href;
+// const menuItem = document.querySelectorAll('a');
+// const menuLength = menuItem.length;
+// for(let i = 0; i < menuLength; i++ ) {
+//    if(menuItem[i].href === currentLocation) {
+//        menuItem[i].className = "active";
+//    }
+// }
 
 //this isn't yet working *** make the value builders shift on the home page when navbar pops out
 // hamburger.addEventListener('click', function(e) {
