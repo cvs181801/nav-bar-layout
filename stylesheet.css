@@ -131,8 +131,8 @@ a {
 .modal__div {
     background-color: red;
     display: block;
-    max-width: 15vh;
-    max-height: 15vh;
+    max-width: 30vh;
+    max-height: 30vh;
     z-index: 9998;
 }
 
