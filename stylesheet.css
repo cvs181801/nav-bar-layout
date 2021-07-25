@@ -272,6 +272,11 @@ p {
     left: 15em;
 }
 
+#value__build__containwhy {
+    top: 35em;
+    left: 15em;
+}
+
 .value__build {
     font-family: var(--ff-accent2);
     color: red;
