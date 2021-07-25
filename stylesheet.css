@@ -157,6 +157,13 @@ a {
     margin-bottom: .75em;
 }
 
+.red__line {
+    height: .2em;
+    width: 5em;
+    background-color: red;
+    /*transform: scaleX(2);*/
+}
+
 .main__img {
     background-image: url("/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg");
     background-color: #404040;
