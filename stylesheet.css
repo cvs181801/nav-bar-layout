@@ -153,6 +153,11 @@ a {
     margin-bottom: .5em;
 }
 
+.about__pg__title1top {
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
 .contact__pg__title {
     font-family: var(--ff-accent2);
     margin-bottom: .75em;
@@ -349,6 +354,14 @@ p {
 
     .about__pg__titlemeet {
         font-size: 2em;
-        margin-top: 3em;
+        padding-top: 2em;
+    }
+
+    .about__pg__title1top {
+        padding-top: 1.5em;
+    }
+
+    .pg__title__blog {
+        padding-top: 1.75em;
     }
 }
