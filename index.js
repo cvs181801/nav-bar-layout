@@ -70,20 +70,11 @@ for(let i = 0; i < navBarLength; i++ ) {
 }
 
 
-// const currentLocation = location.href;
-// const menuItem = document.querySelectorAll('a');
-// const menuLength = menuItem.length;
-// for(let i = 0; i < menuLength; i++ ) {
-//    if(menuItem[i].href === currentLocation) {
-//        menuItem[i].className = "active";
-//    }
-// }
-
 //this isn't yet working *** make the value builders shift on the home page when navbar pops out
 // hamburger.addEventListener('click', function(e) {
 //     console.log("value builders e listener worked")
 //     const home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
-//     if (currentLocation === home && navBar.classList.contains("open")) {
+//     if (navBar.classList.contains("open")) {
 //         e.preventDefault;
 //         valueBuildContainer.classList.remove("shift");
 //     } else {

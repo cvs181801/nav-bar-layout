@@ -55,6 +55,20 @@
     </div><!--close main__div-->
     <p>Photo by Adi Goldstein on Unsplash</p>
     
+    <script>
+        hamburger.addEventListener('click', function(e) {
+    console.log("value builders e listener worked")
+    
+    if (navBar.classList.contains("open")) {
+        e.preventDefault;
+        valueBuildContainer.classList.remove("shift");
+    } else {
+        e.preventDefault;
+        valueBuildContainer.classList.add("shift");
+    }
+})   
+    </script>
+    
     <script src="index.js"></script>
 </body>
 </html>
