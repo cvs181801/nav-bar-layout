@@ -125,6 +125,7 @@ a {
 
 .modal__backgrnd {
     background-color: rgba(173, 177, 184, 0.75);
+    margin: 0 auto;
 }
 
 .modal__div {
@@ -132,6 +133,7 @@ a {
     display: block;
     max-width: 15vh;
     max-height: 15vh;
+    z-index: 9998;
 }
 
 .modal__toggle {
