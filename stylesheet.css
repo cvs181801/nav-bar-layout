@@ -342,4 +342,8 @@ p {
     .pg__titlewhy {
         margin-bottom: .5em;
     }
+
+    .why__p {
+        margin-top: 2.5em;
+    }
 }
