@@ -231,7 +231,7 @@ h2 {
 } 
 
 p {
-    color: var(--lightGrey);
+    color: var(--white);
     font-size: .5rem;
     padding: .5em;
 }
@@ -345,5 +345,10 @@ p {
 
     .why__p {
         margin-top: 4.5em;
+    }
+
+    .about__pg__titlemeet {
+        font-size: 2em;
+        margin-top: 3em;
     }
 }
