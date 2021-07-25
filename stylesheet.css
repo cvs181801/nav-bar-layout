@@ -243,7 +243,7 @@ p {
 .our__services {
     margin: 0 auto;
     text-align: center;
-
+    padding: 1.5em;
 }
 
 #value__build__contain {
