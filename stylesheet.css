@@ -126,10 +126,12 @@ a {
 .modal__backgrnd {
     background-color: rgba(173, 177, 184, 0.75);
     margin: 0 auto;
+    position: absolute;
 }
 
 .modal__div {
     background-color: red;
+    position: absolute;
     display: block;
     max-width: 30vh;
     max-height: 30vh;
