@@ -16,6 +16,7 @@ const closeModalbtn = document.querySelector(".close");
 const modalElements = document.querySelectorAll(".modal__toggle");
 const emailCollector = document.getElementById("Email__Collector");
 const redBtnHome = document.querySelector(".red__btn__home");
+const homeGrayImg = document.querySelector(".main__img");
 
 console.log(redBtnHome);
 console.log(modalElements);
@@ -86,6 +87,7 @@ for(let i = 0; i < navBarLength; i++ ) {
 
 redBtnHome.addEventListener('click', function(e) {
     e.preventDefault();
+    homeGrayImg.style.backgroundColor = "none";
     console.log("red btn worked!");
     modalElements.forEach( element => {
         element.classList.toggle('modal__toggle');
