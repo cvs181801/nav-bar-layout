@@ -325,7 +325,6 @@ h1,
 h2 {
     text-align: center;
     letter-spacing: 0.2rem;
-    text-shadow: 0px 2px 3px var(--lightGrey);
     letter-spacing: .2rem;
     font-family: inherit;
 } 
@@ -338,7 +337,21 @@ p {
 
 h1 {
     font-size: 5rem;
-    text-shadow: 0px 2px 3px white;
+    margin-bottom: 1em;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    text-shadow: 0px 2px 3px var(--lightGrey);
+    letter-spacing: .2rem;
+    font-family: inherit;
+}
+
+.pg__titlewhy,
+.pgtitle__home {
+    font-size: 5rem;
+    text-shadow: 0px 2px 3px var(--lightGrey);
     margin-bottom: 1em;
 }
 
@@ -444,7 +457,7 @@ p {
     width: 4em;
     height: 4em;
     font-size: 2rem;
-    top: 1.5em;
+    top: 1em;
     left: 20em;
     z-index: 9997;
     cursor: pointer;
@@ -461,8 +474,8 @@ p {
     width: 4em;
     height: 4em;
     font-size: 2rem;
-    top: 1.5em;
-    left: 20em;
+    top: -4.5em;
+    left: 19.5em;
     z-index: 9997;
     cursor: pointer;
     font-family: inherit;
@@ -495,8 +508,8 @@ p {
     width: 4em;
     height: 4em;
     font-size: 2rem;
-    top: 1.5em;
-    left: 20em;
+    top: .5em;
+    left: 12em;
     z-index: 9997;
     cursor: pointer;
     font-family: inherit;
@@ -512,7 +525,7 @@ p {
     width: 4em;
     height: 4em;
     font-size: 2rem;
-    top: -6em;
+    top: 1em;
     left: 18.5em;
     z-index: 9997;
     cursor: pointer;
@@ -520,6 +533,22 @@ p {
     padding-top: .5em;
 }
 
+.red__btn__why:hover,
+.red__btn__meet:hover,
+.red__btn__home:hover,
+.red__btn__contact:hover,
+.red__btn__blog:hover,
+.red__btn__about:hover,
+.red__btn__why:focus,
+.red__btn__meet:focus,
+.red__btn__home:focus,
+.red__btn__contact:focus,
+.red__btn__blog:focus,
+.red__btn__about:focus {
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(235, 253, 252, 0.75);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(190, 255, 233, 0.75);
+    box-shadow: 0px 0px 15px 5px rgba(190, 255, 255, 0.75);
+}
 /*MEDIA QUERY*/
 
 @media (max-width: 600px) {
