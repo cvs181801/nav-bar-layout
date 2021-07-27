@@ -13,7 +13,7 @@ const menuItem = document.querySelectorAll("a");
 const growWhy = document.querySelectorAll("#why");
 const submitBtn = document.querySelector(".submit__button");
 const closeModalbtn = document.querySelector(".close");
-const modalElements = document.querySelectorAll(".modal__toggle ");
+const modalElements = document.querySelectorAll(".modal__toggle");
 
 console.log(submitBtn);
 console.log(closeModalbtn);
@@ -50,7 +50,7 @@ growWhy.forEach(title => {
 
 hamburger.addEventListener('click', function(e) {
     if (navBar.classList.contains("open")) {
-            e.preventDefault;
+            e.preventDefault();
             navBar.classList.remove("open");
             hamBar1.classList.remove("change");
             hamBar2.classList.remove("change");
@@ -58,7 +58,7 @@ hamburger.addEventListener('click', function(e) {
             mainDiv.classList.remove("shift");
             hamburger.classList.remove("shift");
     } else {
-            e.preventDefault;
+            e.preventDefault();
             navBar.classList.add("open");
             hamBar1.classList.add("change");
             hamBar2.classList.add("change");
@@ -82,8 +82,13 @@ for(let i = 0; i < navBarLength; i++ ) {
 
 //make the modal buttons work
 
-
-
 submitBtn.addEventListener('click', function(e) {
     console.log("submit btn worked!");
+    e.preventDefault();
+    modalElements.forEach( element => {
+        element.classList.toggle("modal__toggle");
+    })
+        // for(let i = modalElements.length - 1; i > 0; i--) {
+        //     modalElements.classList.remove(".modal__toggle");
+        // }
 })
