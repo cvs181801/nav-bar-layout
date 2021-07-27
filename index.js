@@ -88,7 +88,7 @@ for(let i = 0; i < navBarLength; i++ ) {
 
 redBtnHome.addEventListener('click', function(e) {
     e.preventDefault();
-    modalBackground.style.backgroundColor = "#edeff3";
+    modalBackground.style.backgroundColor = "white";
     modalBackground.style.backgroundImage = "url('/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg')";
     console.log("red btn worked!");
     modalElements.forEach( element => {
