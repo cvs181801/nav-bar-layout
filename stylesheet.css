@@ -364,6 +364,12 @@ p {
     color: red;
 }
 
+.red__btn {
+    border: 1px solid rgb(248, 87, 87);
+    background-color: red;
+    color: var(--white);
+}
+
 #value__build__contain {
     width: 60%;
     max-height: 10vh;
