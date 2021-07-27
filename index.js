@@ -87,7 +87,7 @@ for(let i = 0; i < navBarLength; i++ ) {
 
 redBtnHome.addEventListener('click', function(e) {
     e.preventDefault();
-    homeGrayImg.style.backgroundColor = "none";
+    homeGrayImg.style.backgroundColor = "#edeff3";
     console.log("red btn worked!");
     modalElements.forEach( element => {
         element.classList.toggle('modal__toggle');
