@@ -17,6 +17,7 @@ const modalElements = document.querySelectorAll(".modal__toggle");
 const emailCollector = document.getElementById("Email__Collector");
 const redBtnHome = document.querySelector(".red__btn__home");
 const homeGrayImg = document.querySelector(".main__img");
+const modalBackground = document.querySelector(".modal__backgrnd");
 
 console.log(redBtnHome);
 console.log(modalElements);
@@ -88,7 +89,7 @@ for(let i = 0; i < navBarLength; i++ ) {
 redBtnHome.addEventListener('click', function(e) {
     e.preventDefault();
     //homeGrayImg.style.backgroundColor = "#edeff3";
-    homeGrayImg.style.background = "#edeff3 url('/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg') no-repeat center auto";
+    modalBackground.style.background = "#edeff3 url('/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg') no-repeat center auto";
     console.log("red btn worked!");
     modalElements.forEach( element => {
         element.classList.toggle('modal__toggle');
