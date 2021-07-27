@@ -18,6 +18,7 @@ const emailCollector = document.getElementById("Email__Collector");
 const redBtnHome = document.querySelector(".red__btn__home");
 const homeGrayImg = document.querySelector(".main__img");
 const modalBackground = document.querySelector(".modal__backgrnd");
+const valueBuilders = document.getElementById("value__build__contain");
 
 console.log(redBtnHome);
 console.log(modalElements);
@@ -84,10 +85,12 @@ for(let i = 0; i < navBarLength; i++ ) {
    }
 }
 
-//make the modal buttons work
+//make the modal buttons work. 
+//1. Home/index page:
 
 redBtnHome.addEventListener('click', function(e) {
     e.preventDefault();
+    valueBuilders.style.display = "none";
     modalBackground.style.backgroundColor = "white";
     modalBackground.style.backgroundImage = "url('/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg')";
     console.log("red btn worked!");
