@@ -11,7 +11,7 @@ const hamBar3 = document.querySelector(".third__bar");
 const mainDiv = document.querySelector(".main__div");
 const menuItem = document.querySelectorAll("a");
 const growWhy = document.querySelectorAll("#why");
-const submitBtn = document.querySelector(".submit__button");
+const submitBtn = document.getElementById("submit__button");
 const closeModalbtn = document.querySelector(".close");
 const modalElements = document.querySelectorAll(".modal__toggle");
 
