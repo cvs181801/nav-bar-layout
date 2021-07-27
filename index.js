@@ -84,7 +84,7 @@ for(let i = 0; i < navBarLength; i++ ) {
 
 submitBtn.addEventListener('submit', function(e) {
     console.log("submit btn worked!");
-    e.preventDefault();
+    //e.preventDefault();
     // modalElements.forEach( element => {
     //     element.classList.toggle('modal__toggle');
     // })
