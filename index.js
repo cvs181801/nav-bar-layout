@@ -16,7 +16,7 @@ const closeModalbtn = document.querySelector(".close");
 const modalElements = document.querySelectorAll(".modal__toggle");
 
 console.log(submitBtn);
-console.log(closeModalbtn);
+console.log(modalElements);
 
 //make the cursor work
 window.addEventListener("mousemove", cursor);
