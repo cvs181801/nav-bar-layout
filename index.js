@@ -11,11 +11,13 @@ const hamBar3 = document.querySelector(".third__bar");
 const mainDiv = document.querySelector(".main__div");
 const menuItem = document.querySelectorAll("a");
 const growWhy = document.querySelectorAll("#why");
-const submitBtn = document.getElementById("submit__button");
+const submitBtn = document.querySelector(".submit__button");
 const closeModalbtn = document.querySelector(".close");
 const modalElements = document.querySelectorAll(".modal__toggle");
+const emailCollector = document.getElementById("Email__Collector");
+const redBtnHome = document.querySelector(".red__btn__home");
 
-console.log(submitBtn);
+console.log(redBtnHome);
 console.log(modalElements);
 
 //make the cursor work
@@ -82,8 +84,9 @@ for(let i = 0; i < navBarLength; i++ ) {
 
 //make the modal buttons work
 
-submitBtn.addEventListener('click', function() {
-    console.log("submit btn worked!");
+redBtnHome.addEventListener('click', function(e) {
+    e.preventDefault;
+    console.log("red btn worked!");
     //e.preventDefault();
     // modalElements.forEach( element => {
     //     element.classList.toggle('modal__toggle');
