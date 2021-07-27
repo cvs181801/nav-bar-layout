@@ -109,11 +109,20 @@ emailCollector.addEventListener('submit', function(e) {
     const userName = ourFormData.get("name");
     const userEmailAddress = ourFormData.get("emailAddress");
     const updatedHTML = `<h1 class="secondary-header">Thank you, ${userName}!</h1>
-           <h2> We'll reach out to you shortly to schedule your FREE consultation <br>
-           <br>
+           <h2> We'll reach out to you shortly to schedule your FREE consultation. <br>
            We're looking forward to helping you stay <strong>Cyber Strong</strong>.</h2>
            <p class="fine__print">You'll receive a scheduling invitation link via email at: ${userEmailAddress}.</p>
-           <p> class="fine__print"> Don't forget to check your spam folder - sometimes our emails go there. </p>`;
+           <p class="fine__print"> Don't forget to check your spam folder - sometimes our emails go there. </p>`;
         let mainContent = document.querySelector(".modal__div");
         mainContent.innerHTML = updatedHTML;   
+})
+
+closeModalbtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    console.log("close modal btn worked!");
+    valueBuilders.style.display = "block";
+    modalElements.forEach( element => {
+        element.classList.toggle('modal__toggle');
+    })
+
 })
