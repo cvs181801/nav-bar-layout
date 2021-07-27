@@ -364,11 +364,6 @@ p {
     color: red;
 }
 
-.red__btn {
-    border: 1px solid rgb(248, 87, 87);
-    background-color: red;
-    color: var(--white);
-}
 
 #value__build__contain {
     width: 60%;
@@ -424,7 +419,89 @@ p {
     transition-property: background, transform;
 }
 
+/*CONTACT US BUTTON STYLING */
+.btn__div {
+    position: relative;
+    display: flex;
+}
 
+.red__btn__about {
+    border: 1px solid rgb(248, 87, 87);
+    background-color: red;
+    color: var(--white);
+    position: absolute;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    font-size: 2rem;
+    top: 1.5em;
+    left: 20em;
+}
+
+.red__btn__blog {
+    border: 1px solid rgb(248, 87, 87);
+    background-color: red;
+    color: var(--white);
+    position: absolute;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    font-size: 2rem;
+    top: 1.5em;
+    left: 20em;
+}
+
+.red__btn__contact {
+    border: 1px solid rgb(248, 87, 87);
+    background-color: red;
+    color: var(--white);
+    position: absolute;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    font-size: 2rem;
+    top: 1.5em;
+    left: 20em;
+}
+
+.red__btn__home {
+    border: 1px solid rgb(248, 87, 87);
+    background-color: red;
+    color: var(--white);
+    position: absolute;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    font-size: 2rem;
+    top: 1.5em;
+    left: 20em;
+}
+
+.red__btn__meet {
+    border: 1px solid rgb(248, 87, 87);
+    background-color: red;
+    color: var(--white);
+    position: absolute;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    font-size: 2rem;
+    top: 1.5em;
+    left: 20em;
+}
+
+.red__btn__why {
+    border: 1px solid rgb(248, 87, 87);
+    background-color: red;
+    color: var(--white);
+    position: absolute;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    font-size: 2rem;
+    top: 1.5em;
+    left: 20em;
+}
 
 /*MEDIA QUERY*/
 
