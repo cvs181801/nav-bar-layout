@@ -87,8 +87,8 @@ for(let i = 0; i < navBarLength; i++ ) {
 
 redBtnHome.addEventListener('click', function(e) {
     e.preventDefault();
-    homeGrayImg.style.backgroundColor = "#edeff3";
-    homeGrayImg.style.backgroundImage = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg";
+    //homeGrayImg.style.backgroundColor = "#edeff3";
+    homeGrayImg.style.background = "#edeff3 url('/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg') no-repeat center auto";
     console.log("red btn worked!");
     modalElements.forEach( element => {
         element.classList.toggle('modal__toggle');
