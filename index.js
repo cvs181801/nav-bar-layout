@@ -82,12 +82,12 @@ for(let i = 0; i < navBarLength; i++ ) {
 
 //make the modal buttons work
 
-submitBtn.addEventListener('click', function(e) {
+submitBtn.addEventListener('submit', function(e) {
     console.log("submit btn worked!");
     e.preventDefault();
-    modalElements.forEach( element => {
-        element.classList.toggle("modal__toggle");
-    })
+    // modalElements.forEach( element => {
+    //     element.classList.toggle('modal__toggle');
+    // })
         // for(let i = modalElements.length - 1; i > 0; i--) {
         //     modalElements.classList.remove(".modal__toggle");
         // }
