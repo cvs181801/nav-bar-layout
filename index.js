@@ -85,12 +85,11 @@ for(let i = 0; i < navBarLength; i++ ) {
 //make the modal buttons work
 
 redBtnHome.addEventListener('click', function(e) {
-    e.preventDefault;
+    e.preventDefault();
     console.log("red btn worked!");
-    //e.preventDefault();
-    // modalElements.forEach( element => {
-    //     element.classList.toggle('modal__toggle');
-    // })
+    modalElements.forEach( element => {
+        element.classList.toggle('modal__toggle');
+    })
         // for(let i = modalElements.length - 1; i > 0; i--) {
         //     modalElements.classList.remove(".modal__toggle");
         // }
