@@ -82,7 +82,7 @@ for(let i = 0; i < navBarLength; i++ ) {
 
 //make the modal buttons work
 
-submitBtn.addEventListener('submit', function(e) {
+submitBtn.addEventListener('submit', function() {
     console.log("submit btn worked!");
     //e.preventDefault();
     // modalElements.forEach( element => {
