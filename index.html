@@ -28,10 +28,10 @@
         <span class="third__bar"></span>
     </div><!--close hamburger div-->
 
-    <div class="modal__backgrnd">
-        <div class="modal__div">
-            <form class="my__form" action="#" method="#" id="Email-Collector">
-                <div class="close">&times;</div>
+    <div class="modal__backgrnd modal__toggle">
+        <div class="modal__div modal__toggle">
+            <form class="my__form modal__toggle" action="#" method="#" id="Email-Collector">
+                <div class="close modal__toggle">&times;</div>
                 <p class="modal__txt">Call us today: 888-999-1010</p>
                 <p class="modal__txt2"><strong>Yes, I'm Interested in a FREE Consultation!</strong></p>
                 <input type="text" placeholder="name" name="name">
@@ -68,21 +68,6 @@
         </div><!--close main__img-->
     </div><!--close main__div-->
     <p>Photo by Adi Goldstein on Unsplash</p>
-
-    <script>
-        const valueBuildContainer = document.getElementById("value__build__contain");
-        hamburger.addEventListener('click', function(e) {
-    console.log("value builders e listener worked")
-    
-    if (navBar.classList.contains("open")) {
-        e.preventDefault;
-        valueBuildContainer.classList.remove("shift");
-    } else {
-        e.preventDefault;
-        valueBuildContainer.classList.add("shift");
-    }
-})   
-    </script>
     
     <script src="index.js"></script>
 </body>

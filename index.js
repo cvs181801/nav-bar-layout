@@ -11,8 +11,12 @@ const hamBar3 = document.querySelector(".third__bar");
 const mainDiv = document.querySelector(".main__div");
 const menuItem = document.querySelectorAll("a");
 const growWhy = document.querySelectorAll("#why");
+const submitBtn = document.querySelector(".submit__button");
+const closeModalbtn = document.querySelector(".close");
+const modalElements = document.querySelectorAll(".modal__toggle ");
 
-console.log(growWhy);
+console.log(submitBtn);
+console.log(closeModalbtn);
 
 //make the cursor work
 window.addEventListener("mousemove", cursor);
@@ -42,7 +46,6 @@ growWhy.forEach(title => {
     })
 })
 
-
 //make the nav bar open and close
 
 hamburger.addEventListener('click', function(e) {
@@ -66,6 +69,7 @@ hamburger.addEventListener('click', function(e) {
 })
 
 //make the navbar highlight the page the user is currently on 
+
 const currentLocation = location.href;
 let anchorArray = document.querySelectorAll('a');
 console.log("anchorArray:", anchorArray);
@@ -76,4 +80,10 @@ for(let i = 0; i < navBarLength; i++ ) {
    }
 }
 
+//make the modal buttons work
 
+
+
+submitBtn.addEventListener('click', function(e) {
+    console.log("submit btn worked!");
+})
