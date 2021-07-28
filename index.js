@@ -20,8 +20,11 @@ const homeGrayImg = document.querySelector(".main__img");
 const modalBackground = document.querySelector(".modal__backgrnd");
 const valueBuilders = document.getElementById("value__build__contain");
 
+//test area
 console.log(redBtnHome);
 console.log(modalElements);
+
+valueBuilders.style.left = "15em";
 
 //make the cursor work
 window.addEventListener("mousemove", cursor);
@@ -112,17 +115,20 @@ emailCollector.addEventListener('submit', function(e) {
            <h2> We'll reach out to you shortly to schedule your FREE consultation. <br>
            We're looking forward to helping you stay <strong>Cyber Strong</strong>.</h2>
            <p class="fine__print">You'll receive a scheduling invitation link via email at: ${userEmailAddress}.</p>
-           <p class="fine__print"> Don't forget to check your spam folder - sometimes our emails go there. </p>`;
+           <p class="fine__print"> Don't forget to check your spam folder - sometimes our emails go there. </p>
+           <p><a id="close__link" href="javascript:location.reload(true)"><strong>CLOSE</strong></a></p>`;
+        //    const closeLink = document.getElementById("close__link");
+        //    closeLink.style.color = "black";
         let mainContent = document.querySelector(".modal__div");
         mainContent.innerHTML = updatedHTML;   
+        
 })
 
 closeModalbtn.addEventListener('click', function(e) {
     e.preventDefault();
     console.log("close modal btn worked!");
-    valueBuilders.style.display = "block";
+    valueBuilders.style.display = "grid";
     modalElements.forEach( element => {
         element.classList.toggle('modal__toggle');
     })
-
 })
