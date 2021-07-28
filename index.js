@@ -15,18 +15,17 @@ const submitBtn = document.querySelector(".submit__button");
 const closeModalbtn = document.querySelector(".close");
 const modalElements = document.querySelectorAll(".modal__toggle");
 const emailCollector = document.getElementById("Email__Collector");
-const redBtnHome = document.querySelector(".red__btn__home");
+const redBtn = document.getElementById("redbutton");
 const homeGrayImg = document.querySelector(".main__img");
 const modalBackground = document.querySelector(".modal__backgrnd");
 const valueBuilders = document.getElementById("value__build__contain");
 
 //test area
-console.log(redBtnHome);
+
 console.log(modalElements);
 
-valueBuilders.style.left = "15em";
-
 //make the cursor work
+
 window.addEventListener("mousemove", cursor);
 
 function cursor(e) {
@@ -35,6 +34,7 @@ function cursor(e) {
 }
 
 //make the cursor grow and the colors change when hovering over the red "value builders" 
+
 valueBuilder.forEach(div => {
     div.addEventListener('mouseleave', () => {
         filterCursor.classList.remove("link__grow");
@@ -45,6 +45,7 @@ valueBuilder.forEach(div => {
 });
 
 //make the cursor grow and the colors change when hovering over the titles on the 'why cyber security' page
+
 growWhy.forEach(title => {
     title.addEventListener('mouseleave', () => {
         filterCursor.classList.remove("link__grow");
@@ -65,6 +66,8 @@ hamburger.addEventListener('click', function(e) {
             hamBar3.classList.remove("change");
             mainDiv.classList.remove("shift");
             hamburger.classList.remove("shift");
+            valueBuilders.style.left = "16em";
+            redBtn.style.left = "19em";
     } else {
             e.preventDefault();
             navBar.classList.add("open");
@@ -73,6 +76,8 @@ hamburger.addEventListener('click', function(e) {
             hamBar3.classList.add("change");
             mainDiv.classList.add("shift");
             hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = "23em";
     }
 })
 
@@ -91,7 +96,7 @@ for(let i = 0; i < navBarLength; i++ ) {
 //make the modal buttons work. 
 //1. Home/index page:
 
-redBtnHome.addEventListener('click', function(e) {
+redBtn.addEventListener('click', function(e) {
     e.preventDefault();
     valueBuilders.style.display = "none";
     modalBackground.style.backgroundColor = "white";
