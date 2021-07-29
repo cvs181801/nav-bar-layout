@@ -55,6 +55,19 @@ growWhy.forEach(title => {
     })
 })
 
+//create a way to identify where the red contact us button should be positioned on each page.
+
+let redBtnLocation = {
+    homeLeft: "19em",
+    aboutLeft: "20.5em",
+    whyLeft: "18.5em",
+    meetLeft: "20em",
+    blogLeft: "20em",
+    contactLeft: "19.5em",
+}
+
+console.log(redBtnLocation.homeLeft);
+
 //make the nav bar open and close
 
 hamburger.addEventListener('click', function(e) {
@@ -85,7 +98,6 @@ hamburger.addEventListener('click', function(e) {
 
 const currentLocation = location.href;
 let anchorArray = document.querySelectorAll('a');
-console.log("anchorArray:", anchorArray);
 const navBarLength = anchorArray.length;
 for(let i = 0; i < navBarLength; i++ ) {
    if(anchorArray[i].href === currentLocation) {

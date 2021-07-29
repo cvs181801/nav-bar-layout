@@ -144,9 +144,10 @@ a {
     align-items: center;
     padding: .25em;
     z-index: 9998;
-    
     font-family: var(--ff-accent2);
     border-radius: 10%;
+    animation: 0.3s slideDown;
+    animation-timing-function: linear;
 }
 
 .modal__toggle {
@@ -213,6 +214,17 @@ input:focus {
 
 .modal__txt2 {
     color: black;
+}
+
+@keyframes slideDown {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 
