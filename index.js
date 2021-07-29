@@ -135,20 +135,11 @@ console.log(home);
 //     }
 // })
 
+console.log(!navBar.classList.contains("open"));
+
 hamburger.addEventListener('click', function(e) {
-    console.log(home);
-    console.log(currentLocation);
-        if (navBar.classList.contains("open")) {
-            e.preventDefault();
-            navBar.classList.remove("open");
-            hamBar1.classList.remove("change");
-            hamBar2.classList.remove("change");
-            hamBar3.classList.remove("change");
-            mainDiv.classList.remove("shift");
-            hamburger.classList.remove("shift");
-            valueBuilders.style.left = "16em";
-            redBtn.style.left = "19em";
-        } else if (currentLocation === home) {
+    
+        if (!navBar.classList.contains("open") && currentLocation === home) {
             e.preventDefault();
             navBar.classList.add("open");
             hamBar1.classList.add("change");
@@ -158,7 +149,7 @@ hamburger.addEventListener('click', function(e) {
             hamburger.classList.add("shift");
             valueBuilders.style.left = "24em";
             redBtn.style.left = homeLocation.posL();
-        } else if (currentLocation === about) {
+        } else if (!navBar.classList.contains("open") && currentLocation === about) {
             e.preventDefault();
             navBar.classList.add("open");
             hamBar1.classList.add("change");
@@ -168,7 +159,7 @@ hamburger.addEventListener('click', function(e) {
             hamburger.classList.add("shift");
             valueBuilders.style.left = "24em";
             redBtn.style.left = aboutLocation.posL();
-        } else if (currentLocation === why) {
+        } else if (!navBar.classList.contains("open") && currentLocation === why) {   
             e.preventDefault();
             navBar.classList.add("open");
             hamBar1.classList.add("change");
@@ -178,7 +169,7 @@ hamburger.addEventListener('click', function(e) {
             hamburger.classList.add("shift");
             valueBuilders.style.left = "24em";
             redBtn.style.left = whyLocation.posL();
-        } else if (currentLocation === meet) {
+        } else if (!navBar.classList.contains("open") && currentLocation === meet) {
             e.preventDefault();
             navBar.classList.add("open");
             hamBar1.classList.add("change");
@@ -188,7 +179,7 @@ hamburger.addEventListener('click', function(e) {
             hamburger.classList.add("shift");
             valueBuilders.style.left = "24em";
             redBtn.style.left = meetLocation.posL();
-        } else if (currentLocation === blog) {
+        } else if (!navBar.classList.contains("open") && currentLocation === blog) {
             e.preventDefault();
             navBar.classList.add("open");
             hamBar1.classList.add("change");
@@ -198,7 +189,7 @@ hamburger.addEventListener('click', function(e) {
             hamburger.classList.add("shift");
             valueBuilders.style.left = "24em";
             redBtn.style.left = blogLocation.posL();
-        } else if (currentLocation === contact) {
+        } else if (!navBar.classList.contains("open") && currentLocation === contact) {
             e.preventDefault();
             navBar.classList.add("open");
             hamBar1.classList.add("change");
@@ -210,14 +201,14 @@ hamburger.addEventListener('click', function(e) {
             redBtn.style.left = contactLocation.posL(); 
         } else {
             e.preventDefault();
-            navBar.classList.add("open");
-            hamBar1.classList.add("change");
-            hamBar2.classList.add("change");
-            hamBar3.classList.add("change");
-            mainDiv.classList.add("shift");
-            hamburger.classList.add("shift");
-            valueBuilders.style.left = "24em";
-            redBtn.style.left = "23em";
+            navBar.classList.remove("open");
+            hamBar1.classList.remove("change");
+            hamBar2.classList.remove("change");
+            hamBar3.classList.remove("change");
+            mainDiv.classList.remove("shift");
+            hamburger.classList.remove("shift");
+            valueBuilders.style.left = "16em";
+            redBtn.style.left = "19em"; 
         }
     })
 
