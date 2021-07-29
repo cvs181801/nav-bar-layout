@@ -127,7 +127,7 @@ console.log(home);
 
 hamburger.addEventListener('click', function(e) {
     switch (true) {
-        case 'navBar.classList.contains("open")':
+        case navBar.classList.contains("open"):
             // e.preventDefault();
             // navBar.classList.remove("open");
             // hamBar1.classList.remove("change");
@@ -138,7 +138,7 @@ hamburger.addEventListener('click', function(e) {
             // valueBuilders.style.left = "16em";
             // redBtn.style.left = "19em";
             break;
-        case 'currentLocation = home':
+        case currentLocation === home:
             // e.preventDefault();
             // navBar.classList.add("open");
             // hamBar1.classList.add("change");
