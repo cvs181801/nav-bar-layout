@@ -57,12 +57,12 @@ growWhy.forEach(title => {
 
 //create a way to identify where the red contact us button should be positioned on each page.
 
-let about = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/about.html";
-let home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
-let why = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/whyyouneed.html";
-let meet = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/meettheteam.html";
-let blog = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/blog.html";
-let contact = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/contactus.html";
+let about = "file:///Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/about.html";
+let home = "file:///Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
+let why = "file:///Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/whyyouneed.html";
+let meet = "file:///Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/meettheteam.html";
+let blog = "file:///Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/blog.html";
+let contact = "file:///Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/contactus.html";
 
 // let redBtnLocation = {
 //     home: "19em",
@@ -79,12 +79,22 @@ function RedBtnLocation(location, left) {
 }
 
 let homeLocation = new RedBtnLocation(home, "19em");
+let aboutLocation = new RedBtnLocation(about, "20.5em");
+let whyLocation = new RedBtnLocation(why, "18.5em");
+let meetLocation = new RedBtnLocation(meet, "20em");
+let blogLocation = new RedBtnLocation(blog, "20em");
+let contactLocation = new RedBtnLocation(contact, "19.5em");
 
 RedBtnLocation.prototype.posL = function() {
     return `${this.left}`;
 } 
 
 console.log(homeLocation.posL());
+console.log(aboutLocation.posL());
+console.log(whyLocation.posL());
+console.log(meetLocation.posL());
+console.log(blogLocation.posL());
+console.log(contactLocation.posL());
 
 //make the navbar highlight the page the user is currently on 
 
@@ -126,6 +136,8 @@ console.log(home);
 // })
 
 hamburger.addEventListener('click', function(e) {
+    console.log(home);
+    console.log(currentLocation);
         if (navBar.classList.contains("open")) {
             e.preventDefault();
             navBar.classList.remove("open");
@@ -146,11 +158,68 @@ hamburger.addEventListener('click', function(e) {
             hamburger.classList.add("shift");
             valueBuilders.style.left = "24em";
             redBtn.style.left = homeLocation.posL();
-            redBtn.style.color = "blue";
-    } else {
-        console.log("this hasn't been built yet");
-    }
-})
+        } else if (currentLocation === about) {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = aboutLocation.posL();
+        } else if (currentLocation === why) {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = whyLocation.posL();
+        } else if (currentLocation === meet) {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = meetLocation.posL();
+        } else if (currentLocation === blog) {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = blogLocation.posL();
+        } else if (currentLocation === contact) {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = contactLocation.posL(); 
+        } else {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = "23em";
+        }
+    })
 
 //make the modal buttons work. 
 
