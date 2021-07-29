@@ -66,7 +66,18 @@ let redBtnLocation = {
     contactLeft: "19.5em",
 }
 
-console.log(redBtnLocation.homeLeft);
+//make the navbar highlight the page the user is currently on 
+
+const currentLocation = location.href;
+let anchorArray = document.querySelectorAll('a');
+const navBarLength = anchorArray.length;
+for(let i = 0; i < navBarLength; i++ ) {
+   if(anchorArray[i].href === currentLocation) {
+    anchorArray[i].className = "active";
+   }
+}
+
+console.log(anchorArray[0]);
 
 //make the nav bar open and close
 
@@ -94,37 +105,20 @@ hamburger.addEventListener('click', function(e) {
     }
 })
 
-//make the navbar highlight the page the user is currently on 
-
-const currentLocation = location.href;
-let anchorArray = document.querySelectorAll('a');
-const navBarLength = anchorArray.length;
-for(let i = 0; i < navBarLength; i++ ) {
-   if(anchorArray[i].href === currentLocation) {
-    anchorArray[i].className = "active";
-   }
-}
-
 //make the modal buttons work. 
-//1. Home/index page:
 
 redBtn.addEventListener('click', function(e) {
     e.preventDefault();
     valueBuilders.style.display = "none";
     modalBackground.style.backgroundColor = "white";
     modalBackground.style.backgroundImage = "url('/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg')";
-    console.log("red btn worked!");
     modalElements.forEach( element => {
         element.classList.toggle('modal__toggle');
     })
-        // for(let i = modalElements.length - 1; i > 0; i--) {
-        //     modalElements.classList.remove(".modal__toggle");
-        // }
 })
 
 emailCollector.addEventListener('submit', function(e) {
     e.preventDefault();
-    console.log("submit modal worked!!");
     let ourFormData = new FormData(e.target);
     const userName = ourFormData.get("name");
     const userEmailAddress = ourFormData.get("emailAddress");
@@ -143,7 +137,6 @@ emailCollector.addEventListener('submit', function(e) {
 
 closeModalbtn.addEventListener('click', function(e) {
     e.preventDefault();
-    console.log("close modal btn worked!");
     valueBuilders.style.display = "grid";
     modalElements.forEach( element => {
         element.classList.toggle('modal__toggle');
