@@ -148,7 +148,7 @@ hamburger.addEventListener('click', function(e) {
             // hamburger.classList.add("shift");
             // valueBuilders.style.left = "24em";
             // redBtn.style.left = homeLocation.posL();
-            redBtn.style.color = blue;
+            redBtn.style.color = "blue";
             break;  
     }
 })
