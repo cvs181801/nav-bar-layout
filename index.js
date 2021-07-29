@@ -64,14 +64,14 @@ let meet = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/meettheteam
 let blog = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/blog.html";
 let contact = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/contactus.html";
 
-let redBtnLocation = {
-    home: "19em",
-    about: "20.5em",
-    why: "18.5em",
-    meet: "20em",
-    blog: "20em",
-    contact: "19.5em",
-}
+// let redBtnLocation = {
+//     home: "19em",
+//     about: "20.5em",
+//     why: "18.5em",
+//     meet: "20em",
+//     blog: "20em",
+//     contact: "19.5em",
+// }
 
 function RedBtnLocation(location, left) {
     this.location = location,
@@ -79,8 +79,13 @@ function RedBtnLocation(location, left) {
 }
 
 let homeLocation = new RedBtnLocation(home, "19em");
-console.log(homeLocation);
 
+
+redBtnLocation.prototype.posL = function() {
+    return `The CSS left property is: ${this.left}`;
+} 
+
+console.log(homeLocation.posL);
 
 //make the navbar highlight the page the user is currently on 
 
@@ -93,12 +98,10 @@ for(let i = 0; i < navBarLength; i++ ) {
    }
 }
 
-console.log(anchorArray[0]);
-
 //make the nav bar open and close
 
 hamburger.addEventListener('click', function(e) {
-    if (navBar.classList.contains("open") && anchorArray[i].href === currentLocation) {
+    if (navBar.classList.contains("open")) {
             e.preventDefault();
             navBar.classList.remove("open");
             hamBar1.classList.remove("change");
