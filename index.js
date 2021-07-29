@@ -57,14 +57,30 @@ growWhy.forEach(title => {
 
 //create a way to identify where the red contact us button should be positioned on each page.
 
+let about = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/about.html";
+let home = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/index.html";
+let why = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/whyyouneed.html";
+let meet = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/meettheteam.html";
+let blog = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/blog.html";
+let contact = "/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/contactus.html";
+
 let redBtnLocation = {
-    homeLeft: "19em",
-    aboutLeft: "20.5em",
-    whyLeft: "18.5em",
-    meetLeft: "20em",
-    blogLeft: "20em",
-    contactLeft: "19.5em",
+    home: "19em",
+    about: "20.5em",
+    why: "18.5em",
+    meet: "20em",
+    blog: "20em",
+    contact: "19.5em",
 }
+
+function RedBtnLocation(location, left) {
+    this.location = location,
+    this.left = left;
+}
+
+let homeLocation = new RedBtnLocation(home, "19em");
+console.log(homeLocation);
+
 
 //make the navbar highlight the page the user is currently on 
 
@@ -82,7 +98,7 @@ console.log(anchorArray[0]);
 //make the nav bar open and close
 
 hamburger.addEventListener('click', function(e) {
-    if (navBar.classList.contains("open")) {
+    if (navBar.classList.contains("open") && anchorArray[i].href === currentLocation) {
             e.preventDefault();
             navBar.classList.remove("open");
             hamBar1.classList.remove("change");
