@@ -126,30 +126,29 @@ console.log(home);
 // })
 
 hamburger.addEventListener('click', function(e) {
-    switch (true) {
-        case navBar.classList.contains("open"):
-            // e.preventDefault();
-            // navBar.classList.remove("open");
-            // hamBar1.classList.remove("change");
-            // hamBar2.classList.remove("change");
-            // hamBar3.classList.remove("change");
-            // mainDiv.classList.remove("shift");
-            // hamburger.classList.remove("shift");
-            // valueBuilders.style.left = "16em";
-            // redBtn.style.left = "19em";
-            break;
-        case currentLocation === home:
-            // e.preventDefault();
-            // navBar.classList.add("open");
-            // hamBar1.classList.add("change");
-            // hamBar2.classList.add("change");
-            // hamBar3.classList.add("change");
-            // mainDiv.classList.add("shift");
-            // hamburger.classList.add("shift");
-            // valueBuilders.style.left = "24em";
-            // redBtn.style.left = homeLocation.posL();
+        if (navBar.classList.contains("open")) {
+            e.preventDefault();
+            navBar.classList.remove("open");
+            hamBar1.classList.remove("change");
+            hamBar2.classList.remove("change");
+            hamBar3.classList.remove("change");
+            mainDiv.classList.remove("shift");
+            hamburger.classList.remove("shift");
+            valueBuilders.style.left = "16em";
+            redBtn.style.left = "19em";
+        } else if (currentLocation === home) {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = homeLocation.posL();
             redBtn.style.color = "blue";
-            break;  
+    } else {
+        console.log("this hasn't been built yet");
     }
 })
 
