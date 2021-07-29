@@ -22,7 +22,7 @@ const valueBuilders = document.getElementById("value__build__contain");
 
 //test area
 
-console.log(modalElements);
+
 
 //make the cursor work
 
@@ -80,12 +80,11 @@ function RedBtnLocation(location, left) {
 
 let homeLocation = new RedBtnLocation(home, "19em");
 
-
-redBtnLocation.prototype.posL = function() {
-    return `The CSS left property is: ${this.left}`;
+RedBtnLocation.prototype.posL = function() {
+    return `${this.left}`;
 } 
 
-console.log(homeLocation.posL);
+console.log(homeLocation.posL());
 
 //make the navbar highlight the page the user is currently on 
 
@@ -98,29 +97,59 @@ for(let i = 0; i < navBarLength; i++ ) {
    }
 }
 
+console.log(home);
+
 //make the nav bar open and close
 
+// hamburger.addEventListener('click', function(e) {
+//     if (navBar.classList.contains("open")) {
+//             e.preventDefault();
+//             navBar.classList.remove("open");
+//             hamBar1.classList.remove("change");
+//             hamBar2.classList.remove("change");
+//             hamBar3.classList.remove("change");
+//             mainDiv.classList.remove("shift");
+//             hamburger.classList.remove("shift");
+//             valueBuilders.style.left = "16em";
+//             redBtn.style.left = "19em";
+//     } else {
+//             e.preventDefault();
+//             navBar.classList.add("open");
+//             hamBar1.classList.add("change");
+//             hamBar2.classList.add("change");
+//             hamBar3.classList.add("change");
+//             mainDiv.classList.add("shift");
+//             hamburger.classList.add("shift");
+//             valueBuilders.style.left = "24em";
+//             redBtn.style.left = "23em";
+//     }
+// })
+
 hamburger.addEventListener('click', function(e) {
-    if (navBar.classList.contains("open")) {
-            e.preventDefault();
-            navBar.classList.remove("open");
-            hamBar1.classList.remove("change");
-            hamBar2.classList.remove("change");
-            hamBar3.classList.remove("change");
-            mainDiv.classList.remove("shift");
-            hamburger.classList.remove("shift");
-            valueBuilders.style.left = "16em";
-            redBtn.style.left = "19em";
-    } else {
-            e.preventDefault();
-            navBar.classList.add("open");
-            hamBar1.classList.add("change");
-            hamBar2.classList.add("change");
-            hamBar3.classList.add("change");
-            mainDiv.classList.add("shift");
-            hamburger.classList.add("shift");
-            valueBuilders.style.left = "24em";
-            redBtn.style.left = "23em";
+    switch (true) {
+        case 'navBar.classList.contains("open")':
+            // e.preventDefault();
+            // navBar.classList.remove("open");
+            // hamBar1.classList.remove("change");
+            // hamBar2.classList.remove("change");
+            // hamBar3.classList.remove("change");
+            // mainDiv.classList.remove("shift");
+            // hamburger.classList.remove("shift");
+            // valueBuilders.style.left = "16em";
+            // redBtn.style.left = "19em";
+            break;
+        case 'currentLocation = home':
+            // e.preventDefault();
+            // navBar.classList.add("open");
+            // hamBar1.classList.add("change");
+            // hamBar2.classList.add("change");
+            // hamBar3.classList.add("change");
+            // mainDiv.classList.add("shift");
+            // hamburger.classList.add("shift");
+            // valueBuilders.style.left = "24em";
+            // redBtn.style.left = homeLocation.posL();
+            redBtn.style.color = blue;
+            break;  
     }
 })
 
