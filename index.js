@@ -78,18 +78,18 @@ function RedBtnLocation(location, left) {
     this.left = left;
 }
 
-let homeLocation = new RedBtnLocation(home, "19em");
-let aboutLocation = new RedBtnLocation(about, "20.5em");
-let whyLocation = new RedBtnLocation(why, "18.5em");
-let meetLocation = new RedBtnLocation(meet, "20em");
-let blogLocation = new RedBtnLocation(blog, "20em");
-let contactLocation = new RedBtnLocation(contact, "19.5em");
+let homeLocation = new RedBtnLocation(home, "19");
+let aboutLocation = new RedBtnLocation(about, "20.5");
+let whyLocation = new RedBtnLocation(why, "18.5");
+let meetLocation = new RedBtnLocation(meet, "20");
+let blogLocation = new RedBtnLocation(blog, "20");
+let contactLocation = new RedBtnLocation(contact, "19.5");
 
 RedBtnLocation.prototype.posL = function() {
     return `${this.left}`;
 } 
 
-console.log(homeLocation.posL());
+console.log(parseInt(homeLocation.posL()) + 3 + "em");
 console.log(aboutLocation.posL());
 console.log(whyLocation.posL());
 console.log(meetLocation.posL());
@@ -139,67 +139,8 @@ console.log(!navBar.classList.contains("open"));
 
 hamburger.addEventListener('click', function(e) {
     
-        if (!navBar.classList.contains("open") && currentLocation === home) {
-            e.preventDefault();
-            navBar.classList.add("open");
-            hamBar1.classList.add("change");
-            hamBar2.classList.add("change");
-            hamBar3.classList.add("change");
-            mainDiv.classList.add("shift");
-            hamburger.classList.add("shift");
-            valueBuilders.style.left = "24em";
-            redBtn.style.left = homeLocation.posL();
-        } else if (!navBar.classList.contains("open") && currentLocation === about) {
-            e.preventDefault();
-            navBar.classList.add("open");
-            hamBar1.classList.add("change");
-            hamBar2.classList.add("change");
-            hamBar3.classList.add("change");
-            mainDiv.classList.add("shift");
-            hamburger.classList.add("shift");
-            valueBuilders.style.left = "24em";
-            redBtn.style.left = aboutLocation.posL();
-        } else if (!navBar.classList.contains("open") && currentLocation === why) {   
-            e.preventDefault();
-            navBar.classList.add("open");
-            hamBar1.classList.add("change");
-            hamBar2.classList.add("change");
-            hamBar3.classList.add("change");
-            mainDiv.classList.add("shift");
-            hamburger.classList.add("shift");
-            valueBuilders.style.left = "24em";
-            redBtn.style.left = whyLocation.posL();
-        } else if (!navBar.classList.contains("open") && currentLocation === meet) {
-            e.preventDefault();
-            navBar.classList.add("open");
-            hamBar1.classList.add("change");
-            hamBar2.classList.add("change");
-            hamBar3.classList.add("change");
-            mainDiv.classList.add("shift");
-            hamburger.classList.add("shift");
-            valueBuilders.style.left = "24em";
-            redBtn.style.left = meetLocation.posL();
-        } else if (!navBar.classList.contains("open") && currentLocation === blog) {
-            e.preventDefault();
-            navBar.classList.add("open");
-            hamBar1.classList.add("change");
-            hamBar2.classList.add("change");
-            hamBar3.classList.add("change");
-            mainDiv.classList.add("shift");
-            hamburger.classList.add("shift");
-            valueBuilders.style.left = "24em";
-            redBtn.style.left = blogLocation.posL();
-        } else if (!navBar.classList.contains("open") && currentLocation === contact) {
-            e.preventDefault();
-            navBar.classList.add("open");
-            hamBar1.classList.add("change");
-            hamBar2.classList.add("change");
-            hamBar3.classList.add("change");
-            mainDiv.classList.add("shift");
-            hamburger.classList.add("shift");
-            valueBuilders.style.left = "24em";
-            redBtn.style.left = contactLocation.posL(); 
-        } else {
+        if (navBar.classList.contains("open") && currentLocation === home) {
+       
             e.preventDefault();
             navBar.classList.remove("open");
             hamBar1.classList.remove("change");
@@ -208,7 +149,137 @@ hamburger.addEventListener('click', function(e) {
             mainDiv.classList.remove("shift");
             hamburger.classList.remove("shift");
             valueBuilders.style.left = "16em";
-            redBtn.style.left = "19em"; 
+            redBtn.style.left = parseInt(homeLocation.posL()) + "em"; 
+        } else if (navBar.classList.contains("open") && currentLocation === about) {
+            
+            e.preventDefault();
+            navBar.classList.remove("open");
+            hamBar1.classList.remove("change");
+            hamBar2.classList.remove("change");
+            hamBar3.classList.remove("change");
+            mainDiv.classList.remove("shift");
+            hamburger.classList.remove("shift");
+            valueBuilders.style.left = "16em";
+            redBtn.style.left = parseInt(aboutLocation.posL()) + "em"; 
+            redBtn.style.backgroundColor = "green";
+        } else if (navBar.classList.contains("open") && currentLocation === why) {   
+        
+            e.preventDefault();
+            navBar.classList.remove("open");
+            hamBar1.classList.remove("change");
+            hamBar2.classList.remove("change");
+            hamBar3.classList.remove("change");
+            mainDiv.classList.remove("shift");
+            hamburger.classList.remove("shift");
+            valueBuilders.style.left = "16em";
+            redBtn.style.left = parseInt(whyLocation.posL()) + "em"; 
+            redBtn.style.backgroundColor = "green";
+        } else if (navBar.classList.contains("open") && currentLocation === meet) {
+            
+            e.preventDefault();
+            navBar.classList.remove("open");
+            hamBar1.classList.remove("change");
+            hamBar2.classList.remove("change");
+            hamBar3.classList.remove("change");
+            mainDiv.classList.remove("shift");
+            hamburger.classList.remove("shift");
+            valueBuilders.style.left = "16em";
+            redBtn.style.left = parseInt(meetLocation.posL()) + "em"; 
+            redBtn.style.backgroundColor = "green";
+        } else if (navBar.classList.contains("open") && currentLocation === blog) {
+
+            e.preventDefault();
+            navBar.classList.remove("open");
+            hamBar1.classList.remove("change");
+            hamBar2.classList.remove("change");
+            hamBar3.classList.remove("change");
+            mainDiv.classList.remove("shift");
+            hamburger.classList.remove("shift");
+            valueBuilders.style.left = "16em";
+            redBtn.style.left = parseInt(blogLocation.posL()) + "em"; 
+            redBtn.style.backgroundColor = "green";
+        } else if (navBar.classList.contains("open") && currentLocation === contact) {
+
+            e.preventDefault();
+            navBar.classList.remove("open");
+            hamBar1.classList.remove("change");
+            hamBar2.classList.remove("change");
+            hamBar3.classList.remove("change");
+            mainDiv.classList.remove("shift");
+            hamburger.classList.remove("shift");
+            valueBuilders.style.left = "16em";
+            redBtn.style.left = parseInt(contactLocation.posL()) + "em"; 
+            redBtn.style.backgroundColor = "green";
+        } else if (!navBar.classList.contains("open") && currentLocation === home)  {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = parseInt(homeLocation.posL()) + 4 + "em";  
+        } else if (!navBar.classList.contains("open") && currentLocation === about)  {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = parseInt(aboutLocation.posL()) + 4 + "em";  
+        } else if (!navBar.classList.contains("open") && currentLocation === why)  {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = parseInt(whyLocation.posL()) + 4 + "em";  
+        } else if (!navBar.classList.contains("open") && currentLocation === meet)  {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = parseInt(meetLocation.posL()) + 4 + "em";  
+        } else if (!navBar.classList.contains("open") && currentLocation === blog)  {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = parseInt(blogLocation.posL()) + 4 + "em";  
+        } else if (!navBar.classList.contains("open") && currentLocation === contact)  {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = parseInt(contactLocation.posL()) + 4 + "em";  
+        } else {
+            e.preventDefault();
+            navBar.classList.add("open");
+            hamBar1.classList.add("change");
+            hamBar2.classList.add("change");
+            hamBar3.classList.add("change");
+            mainDiv.classList.add("shift");
+            hamburger.classList.add("shift");
+            valueBuilders.style.left = "24em";
+            redBtn.style.left = parseInt(contactLocation.posL()) + 4 + "em";
         }
     })
 
