@@ -561,7 +561,7 @@ p {
     -moz-box-shadow: 0px 0px 15px 5px rgba(190, 255, 233, 0.75);
     box-shadow: 0px 0px 15px 5px rgba(190, 255, 255, 0.75);
 }
-/*MEDIA QUERY*/
+/*MEDIA QUERIES*/
 
 @media (max-width: 600px) {
     h1 {
@@ -582,13 +582,24 @@ p {
         padding: 1em;
     }
 
-    .pg__titlewhy {
-        margin-bottom: .5em;
+    .pgtitle__home {
+        margin-bottom: 0;
+        padding: .5em;
+        font-size: 3.5rem;
     }
 
-    .why__p {
-        margin-top: 4.5em;
+    .pg__titlewhy {
+        margin-bottom: .25em;
+        font-size: 3.5rem;
     }
+
+    pg__subtitlewhy {
+        margin-bottom: .25em;
+    }
+
+    /*.why__p {
+        margin-top: 4.5em;
+    }*/
 
     .about__pg__titlemeet {
         font-size: 2em;
@@ -596,7 +607,7 @@ p {
     }
 
     .about__pg__title1top {
-        padding-top: 1.5em;
+        padding: 1.5em .5em .5em .5em;
     }
 
     .pg__title__blog {
@@ -607,5 +618,28 @@ p {
         object-fit: cover;
         width: 100%;
         max-height: 350px;
+    }
+
+    .red__btn__home {
+        left: 4.5em;
+        top: 15em;
+    }
+
+    .red__btn__about {
+        left: 4.5em;
+        top: 29em;
+    }
+
+    .red__btn__why {
+        top: 22em;
+        left: 4.5em;
+    }
+
+    .red__btn__meet {
+        left: 4.5em;
+    }
+    .red__btn__contact {
+        left: 4.5em;
+        top: 23.75em;
     }
 }
