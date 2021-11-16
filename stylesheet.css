@@ -282,7 +282,7 @@ input:focus {
 }
 
 .main__img {
-    background-image: url("/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg");
+    background-image: url("./pics/cyber1.jpeg");
     background-color: #404040;
     background-blend-mode: multiply;
     opacity: .8;
@@ -295,7 +295,7 @@ input:focus {
 }
 
 .main__img__2 {
-    background-image: url("/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/michal-biernat-h0xEUQXzU38-unsplash.jpeg");
+    background-image: url("./pics/michal-biernat-h0xEUQXzU38-unsplash.jpeg");
     background-color: #404040;
     background-blend-mode: multiply;
     opacity: .8;
@@ -310,7 +310,7 @@ input:focus {
 }
 
 .main__img__3 {
-    background-image: url("/Users/casvalkyriespicer/Documents/GitHub/nav-bar-layout/pics/cyber1.jpeg");
+    background-image: url("./pics/cyber1.jpeg");
     background-color: #404040;
     background-blend-mode: multiply;
     opacity: .8;
@@ -434,6 +434,8 @@ p {
     transition: all 0.3s ease;
     transition-property: background, transform;
 }
+
+
 
 /*CONTACT US BUTTON STYLING */
 
@@ -560,6 +562,10 @@ p {
     -webkit-box-shadow: 0px 0px 15px 5px rgba(235, 253, 252, 0.75);
     -moz-box-shadow: 0px 0px 15px 5px rgba(190, 255, 233, 0.75);
     box-shadow: 0px 0px 15px 5px rgba(190, 255, 255, 0.75);
+}
+
+.value__build {
+    border-bottom: 5px solid rgb(190, 255, 233,);
 }
 /*MEDIA QUERIES*/
 
