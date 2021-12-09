@@ -377,6 +377,10 @@ p {
     padding: 1.5em;
 }
 
+.our__services > li {
+    text-decoration: none;
+}
+
 .redtxt {
     color: red;
 }
